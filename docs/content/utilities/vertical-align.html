@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Vertical align | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--narrow">
+      <div class="CIC-docs__intro">
+        <div class="CIC-docs__container">
+          <h1>Vertical align</h1>
+          
+          <p class="CIC-intro">Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.</p>
+          
+        </div>
+      </div>
+      <div class="CIC-docs__content">
+        <div class="CIC-docs__container">
+
+<p>Change the alignment of elements with the vertical-alignment utilities. Please note that vertical-align only affects inline, inline-block, inline-table, and table cell elements.</p>
+
+Classes for the value of <code>CIC-align</code> are named using the format <code>.CIC-align-{value}</code>. Choose from the following values:
+
+<ul>
+<li>baseline</li>
+<li>top</li>
+<li>middle</li>
+<li>bottom</li>
+<li>text-bottom</li>
+<li>text-top</li>
+</ul>
+
+<p>To vertically center non-inline content (like &lt;div&gt;s and more), use our <a href="docs/content/utilities/flex.html">flex box utilities</a>.</p>
+
+<p>With inline elements:</p>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <span class="CIC-align-baseline">baseline</span>
+    <span class="CIC-align-top">top</span>
+    <span class="CIC-align-middle">middle</span>
+    <span class="CIC-align-bottom">bottom</span>
+    <span class="CIC-align-text-top">text-top</span>
+    <span class="CIC-align-text-bottom">text-bottom</span>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<span class="CIC-align-baseline">baseline</span>
+<span class="CIC-align-top">top</span>
+<span class="CIC-align-middle">middle</span>
+<span class="CIC-align-bottom">bottom</span>
+<span class="CIC-align-text-top">text-top</span>
+<span class="CIC-align-text-bottom">text-bottom</span>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<span class="CIC-align-baseline">baseline</span>
+<span class="CIC-align-top">top</span>
+<span class="CIC-align-middle">middle</span>
+<span class="CIC-align-bottom">bottom</span>
+<span class="CIC-align-text-top">text-top</span>
+<span class="CIC-align-text-bottom">text-bottom</span>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<p>With table cells:</p>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-table">
+      <table style="height: 100px;">
+        <tbody>
+          <tr>
+            <td class="CIC-align-baseline">baseline</td>
+            <td class="CIC-align-top">top</td>
+            <td class="CIC-align-middle">middle</td>
+            <td class="CIC-align-bottom">bottom</td>
+            <td class="CIC-align-text-top">text-top</td>
+            <td class="CIC-align-text-bottom">text-bottom</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-table">
+  <table style="height: 100px;">
+    <tbody>
+      <tr>
+        <td class="CIC-align-baseline">baseline</td>
+        <td class="CIC-align-top">top</td>
+        <td class="CIC-align-middle">middle</td>
+        <td class="CIC-align-bottom">bottom</td>
+        <td class="CIC-align-text-top">text-top</td>
+        <td class="CIC-align-text-bottom">text-bottom</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-table">
+  <table style="height: 100px;">
+    <tbody>
+      <tr>
+        <td class="CIC-align-baseline">baseline</td>
+        <td class="CIC-align-top">top</td>
+        <td class="CIC-align-middle">middle</td>
+        <td class="CIC-align-bottom">bottom</td>
+        <td class="CIC-align-text-top">text-top</td>
+        <td class="CIC-align-text-bottom">text-bottom</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+
+        </div>
+      </div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

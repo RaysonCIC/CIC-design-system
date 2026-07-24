@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Back to top | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="A button that allows users to quickly return to the top of the page." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--narrow">
+      <div class="CIC-docs__intro CIC-docs__intro--tabs">
+        <div class="CIC-docs__container">
+          <h1>Back to top</h1>
+          
+          <p class="CIC-intro">A button that allows users to quickly return to the top of the page.</p>
+          
+        </div>
+      </div>
+<div class="CIC-docs__tabs">
+  <div class="CIC-tabs js-tabs CIC-docs-tabs">
+    <ul class="CIC-tabs__list">
+      <li class="CIC-tabs__list-item">
+        <a href="#section-guidance" class="CIC-tabs__link js-tabs-fixed">Guidance</a>
+      </li>
+      <li class="CIC-tabs__list-item">
+        <a href="#section-interactive-demo" class="CIC-tabs__link js-tabs-fixed">Demo &amp; Code</a>
+      </li>
+    </ul>
+    <section id="section-guidance" class="CIC-tabs__content">
+      <div class="CIC-docs__container">
+        
+<h2>Usage</h2>
+<p>A back to top button provides an easy way to return to the top of the page, without having to manually scroll.</p>
+
+<p>Use the back to top component when there is a lot of content on the page, such as articles, blogs, or listings.</p>
+
+<h3>When to avoid</h3>
+
+<p>Do not use:</p>
+
+<ul>
+  <li>on pages that are short that have a minimum amount of scrolling</li>
+  <li>if there is already a way to return to the top of the page, such as a fixed in-page navigation menu</li>
+  <li>if the 'back to top' button creates confusion or adds unnecessary clutter</li>
+</ul>
+
+<h3>How this component works</h3>
+
+<p>The back to top button appears when users want to scroll up, making it visible only when necessary.</p>
+
+<p>On mobile and smaller screens, the icon turns into an upward chevron and the text becomes 'Top' below the icon to save space.</p>
+
+<h3>Scrollable distance</h3>
+
+<p>By default the back to top button appears when users start scrolling up, signaling an intention to return to the top. However, if you want the button to appear when users have scrolled down a certain distance you can use the <code>data-offset</code> attribute.</p>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<button type="button" data-offset="400">
+  <!-- ... -->
+</button>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<button type="button" data-offset="400">
+  <!-- ... -->
+</button>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3>Scrollable element</h3>
+
+<p>By default, the visibility of the back to top button is toggled by the scrolling on the window element. If you have a different scrollable element in your page, you can use the data-element attribute to pass the CSS selector of the scrollable element.</p>
+
+<p>For example, if you have a <code>&lt;main class=&quot;main-element&quot;&gt;</code> with a <code>height: 100vh</code> and <code>overflow: auto</code>, you can set <code>data-element='.main-element'</code></p>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<button type="button" data-element=".main-element">
+  <!-- ... -->
+</button>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<button type="button" data-element=".main-element">
+  <!-- ... -->
+</button>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h2>Accessibility</h2>
+<p>All components are responsive and designed to comply with WCAG 2.2 AA accessibility standards. Full compliance depends on using and configuring the components correctly.</p>
+
+      </div>
+    </section>
+    <section id="section-interactive-demo" class="CIC-tabs__content">
+      <div class="CIC-docs__demo">
+        <div class="CIC-docs__external">
+          <div class="CIC-list CIC-list--8">
+            <a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/back-to-top/blank.html"><span>View in new window</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a><a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/back-to-top/theme.html"><span>View theming example</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a>
+          </div>
+        </div>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <p>⚠️ Scroll down and then up to reveal the Back to top button.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, aspernatur. Sapiente dolorum neque modi ad repellendus, suscipit quia doloremque vero, veritatis aliquid nihil! Adipisci odit laudantium voluptas repellendus consequatur assumenda eveniet, molestias nobis tenetur? Quaerat ex illo ut cupiditate blanditiis qui atque vero fuga, consequatur velit perferendis rem reprehenderit tenetur, amet illum architecto, maxime dicta impedit iusto! Nobis, quam incidunt maxime at quia laudantium natus cum. Quis eveniet hic officiis animi doloremque, tenetur consequatur nihil eligendi nobis in ex voluptates harum, delectus dicta facilis, vero ea. Molestias dolorum, eius ipsa officia error iste illo voluptatum ipsum eaque. Quisquam quasi ab quibusdam cupiditate explicabo ad nobis aliquam, saepe, commodi molestiae error, quos quaerat ea! Ipsum minus velit quisquam omnis recusandae saepe! Dolore rerum tempore est veritatis minus modi facere, ipsam illo dicta, iusto beatae officia odio deserunt veniam dignissimos quos quia laudantium iure fugit eaque possimus suscipit? Magni saepe soluta nisi ipsa iusto deleniti tempora, explicabo commodi, at quam voluptatem voluptatum voluptas accusamus non id asperiores nobis aliquid excepturi? Delectus consectetur, animi aut illum at iusto? Est impedit iusto, praesentium porro eaque unde aspernatur aperiam. Veniam error, deleniti iusto aut a ullam voluptatem dignissimos quia! Maxime vitae reprehenderit quidem eligendi sit non est? Earum illum sequi odio. Beatae sit unde velit voluptatibus, ducimus officia, accusamus iusto voluptas atque necessitatibus, qui sunt delectus porro reiciendis quisquam hic autem illo magnam ipsa quod nobis odio dignissimos. Impedit ipsum tenetur deserunt quod odio labore, minus, sit voluptate corrupti nisi pariatur quae quaerat, necessitatibus est iste exercitationem quisquam quia voluptas rem? Eos voluptatibus nihil aut reprehenderit suscipit temporibus praesentium quod, animi debitis. Dolores exercitationem nesciunt ea eum voluptatibus quaerat! Expedita quae suscipit, corrupti repudiandae reiciendis autem totam ipsam dolor rem eius sed doloremque modi voluptates, quidem consequatur deserunt possimus ullam inventore voluptate nemo dolore error amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tenetur quidem iste nisi accusantium dicta nostrum ratione officia, fuga ipsa fugit qui nemo quibusdam voluptatibus hic dolor quaerat ut sapiente magnam ullam nesciunt accusamus temporibus. Dolore doloremque dolorem quos ab ducimus debitis modi adipisci minus animi architecto odit quia voluptatem optio nulla eaque, neque suscipit accusamus dolorum enim! Quos dolor eos dolorem quibusdam debitis distinctio voluptas aperiam, ratione voluptatem omnis voluptates adipisci, praesentium temporibus dicta eius dolorum maiores quae doloremque? Error odio harum debitis atque, similique minima nobis voluptatibus sequi non consequatur cumque sint ratione accusamus deleniti maiores fugit animi repellat ullam, natus at quam excepturi tenetur cupiditate. Corporis tenetur possimus soluta praesentium maxime vero autem reprehenderit quia culpa unde velit cum sapiente eligendi laboriosam fugiat adipisci, architecto libero, reiciendis doloribus ratione tempora temporibus. Aliquid quibusdam, dolor officia temporibus repellendus nemo explicabo hic quod! Totam architecto officiis vitae nostrum quae deserunt, harum quasi cumque fuga delectus. Consequuntur deserunt alias, consectetur recusandae minima ducimus vitae in mollitia at, tempore blanditiis expedita modi repellendus, nam harum dolorem laudantium aliquam! Harum omnis eos perspiciatis quam mollitia. Voluptates quas nulla quasi ex accusantium soluta laudantium beatae commodi ullam expedita, sapiente enim totam quia? Iste, facere repudiandae ipsum fuga, enim quibusdam doloribus cumque odit atque repellat numquam nulla dolor molestiae laboriosam deleniti ab in omnis, soluta sed ex quae optio! Corporis provident reprehenderit, repellat obcaecati voluptatem consequuntur similique rem tempore eveniet delectus iste tenetur? Autem accusamus nisi voluptate earum atque molestias? Nemo cumque consequuntur ullam ex cum, fuga voluptas vero nihil laborum architecto, possimus incidunt natus autem nobis aliquam molestiae placeat provident ut delectus. Totam error unde obcaecati porro velit mollitia maxime iure, perferendis vitae placeat, officia, natus odio quam quo perspiciatis dicta nulla voluptates in expedita commodi non. Saepe tempora architecto quos dolor quis a impedit voluptates dignissimos, quia eaque placeat, sunt aperiam omnis vel aliquam? Mollitia voluptas exercitationem eveniet quos tempore quisquam provident, fuga hic harum asperiores aperiam magni dolores ex sint illum voluptatem delectus id earum beatae sequi esse at ratione quas. Rem, accusamus. Non, vel maxime quisquam magni culpa quidem repellat in dolorum nam vero asperiores voluptatibus laudantium ducimus quis quos expedita omnis a illum explicabo. Suscipit sint, delectus praesentium velit vel earum pariatur, adipisci perspiciatis animi illo porro nihil! Unde maxime a vel eligendi iure veniam rem. Nulla, vero! Sequi sit autem assumenda natus numquam in iste aliquam id cupiditate!</p>
+    <button type="button" class="CIC-button CIC-button--dark CIC-button--flex CIC-back-to-top js-back-to-top">
+    </button>  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<button type="button" class="CIC-button CIC-button--dark CIC-button--flex CIC-back-to-top js-back-to-top">
+</button>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<button type="button" class="CIC-button CIC-button--dark CIC-button--flex CIC-back-to-top js-back-to-top">
+</button>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+  </div>
+</div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

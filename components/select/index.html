@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Select | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="Select allows users to choose an option from an available list." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--narrow">
+      <div class="CIC-docs__intro CIC-docs__intro--tabs">
+        <div class="CIC-docs__container">
+          <h1>Select</h1>
+          
+          <p class="CIC-intro">Select allows users to choose an option from an available list.</p>
+          
+        </div>
+      </div>
+<div class="CIC-docs__tabs">
+  <div class="CIC-tabs js-tabs CIC-docs-tabs">
+    <ul class="CIC-tabs__list">
+      <li class="CIC-tabs__list-item">
+        <a href="#section-guidance" class="CIC-tabs__link js-tabs-fixed">Guidance</a>
+      </li>
+      <li class="CIC-tabs__list-item">
+        <a href="#section-interactive-demo" class="CIC-tabs__link js-tabs-fixed">Demo &amp; Code</a>
+      </li>
+    </ul>
+    <section id="section-guidance" class="CIC-tabs__content">
+      <div class="CIC-docs__container">
+        
+<h2>Usage</h2>
+<p>A select field, also referred to as a dropdown, allows users to select single or multiple items from a list of available options. Consider dropdowns when the options exceed 8, or where it is not feasible to list all options as checkboxes or radio buttons. When using multislect, ensure you make it clear to the user that more than one option can be selected.</p>
+
+<p>Do:</p>
+
+<ul>
+  <li>use descriptive labels, state the intent of the action</li>
+  <li>use helper text to give further guidance to the user</li>
+  <li>specify errors inline, show the user where the error occurred and provide a reason</li>
+</ul>
+
+<h3>When to avoid</h3>
+<p>Don't use a select when there are fewer than 8 options or where there is benefit to the user seeing all available options up front. In these instances consider using checkboxes or radio buttons so all options are visible without additional clicking or scrolling. </p>
+
+<h2>How this component works</h2>
+
+<h3>Helper text</h3>
+
+<p>Helper text provides users further guidance to make a selection. Use to provide additional context, information or as an example to complete a field input.</p>
+
+<h3>Error messages</h3>
+<p>Error messages inform the user when there is an issue with the data they have input. Provide helpful error messages to clearly explain to the user what the issue is and how they can effectively address the errors.</p>
+
+<h2>Accessibility</h2>
+<p>All components are responsive and designed to comply with WCAG 2.2 AA accessibility standards. Full compliance depends on using and configuring the components correctly.</p>
+
+<h3>Ensuring compliance through usage</h3>
+
+<h4>Redundant entry</h4>
+
+<p>To ensure WCAG 2.2 AA compliance for a select component, it's essential to retain selected options if users revisit the form or make changes to other fields. This reduces redundant actions, allowing users to pick up where they left off. Ensure that users can adjust their selections without affecting other fields, supporting smooth navigation and a streamlined form experience.</p>
+
+<h4>Consistent help</h4>
+
+<p>For a seamless, accessible experience with the select component, focus on clear labelling and purpose-driven design, especially when combined with other inputs. Arrange options logically and in alignment with user needs to reduce cognitive load. If users are likely to revisit or adjust selections, aim to maintain their choices to prevent unnecessary re-selection. A consistently configured select component improves user interaction, supporting both accessibility and usability throughout the interface.</p>
+
+<p>Following these practices supports a more inclusive, accessible experience in forms and flows, meeting compliance requirements effectively.</p>
+
+      </div>
+    </section>
+    <section id="section-interactive-demo" class="CIC-tabs__content">
+      <div class="CIC-docs__demo">
+        <div class="CIC-docs__external">
+          <div class="CIC-list CIC-list--8">
+            <a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/select/blank.html"><span>View in new window</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a><a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/select/theme.html"><span>View theming example</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a>
+          </div>
+        </div>
+
+<h3>Single select</h3>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="select-all-regions-1">Region</label>
+          <select class="CIC-form__select" name="select-all-regions-1" id="select-all-regions-1" ><option value="">Please select</option>
+            <option value="Central Coast">Central Coast</option>
+            <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+            <option value="Far West">Far West</option>
+            <option value="Hunter">Hunter</option>
+            <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+            <option value="New England &amp; North West">New England &amp; North West</option>
+            <option value="North Coast">North Coast</option>
+            <option value="Riverina Murray">Riverina Murray</option>
+          </select>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-regions-1">Region</label>
+      <select class="CIC-form__select" name="select-all-regions-1" id="select-all-regions-1" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-regions-1">Region</label>
+      <select class="CIC-form__select" name="select-all-regions-1" id="select-all-regions-1" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h3>Multiple select</h3>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="select-all-savings-programs-1">Savings programs you would like to claim</label>
+        <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+          <select name="select-all-savings-programs-1" id="select-all-savings-programs-1" multiple >
+            <option value="Stay CIC voucher">Stay CIC voucher</option>
+            <option value="Regional seniors travel card">Regional seniors travel card</option>
+            <option value="Toll relief">Toll relief</option>
+            <option value="First lap swimming voucher">First lap swimming voucher</option>
+            <option value="Active kids voucher">Active kids voucher</option>
+            <option value="Creative kids voucher">Creative kids voucher</option>
+            <option value="Energy made easy">Energy made easy</option>
+          </select>
+        </div>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-savings-programs-1">Savings programs you would like to claim</label>
+    <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+      <select name="select-all-savings-programs-1" id="select-all-savings-programs-1" multiple >
+        <option value="Stay CIC voucher">Stay CIC voucher</option>
+        <option value="Regional seniors travel card">Regional seniors travel card</option>
+        <option value="Toll relief">Toll relief</option>
+        <option value="First lap swimming voucher">First lap swimming voucher</option>
+        <option value="Active kids voucher">Active kids voucher</option>
+        <option value="Creative kids voucher">Creative kids voucher</option>
+        <option value="Energy made easy">Energy made easy</option>
+      </select>
+    </div>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-savings-programs-1">Savings programs you would like to claim</label>
+    <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+      <select name="select-all-savings-programs-1" id="select-all-savings-programs-1" multiple >
+        <option value="Stay CIC voucher">Stay CIC voucher</option>
+        <option value="Regional seniors travel card">Regional seniors travel card</option>
+        <option value="Toll relief">Toll relief</option>
+        <option value="First lap swimming voucher">First lap swimming voucher</option>
+        <option value="Active kids voucher">Active kids voucher</option>
+        <option value="Creative kids voucher">Creative kids voucher</option>
+        <option value="Energy made easy">Energy made easy</option>
+      </select>
+    </div>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h3>Helper text</h3>
+
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="select-all-regions-2">Region</label>
+        <span class="CIC-form__helper" id="select-all-regions-2-helper-text">Your region of residence</span>
+          <select class="CIC-form__select" name="select-all-regions-2" id="select-all-regions-2" aria-describedby="select-all-regions-2-helper-text" ><option value="">Please select</option>
+            <option value="Central Coast">Central Coast</option>
+            <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+            <option value="Far West">Far West</option>
+            <option value="Hunter">Hunter</option>
+            <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+            <option value="New England &amp; North West">New England &amp; North West</option>
+            <option value="North Coast">North Coast</option>
+            <option value="Riverina Murray">Riverina Murray</option>
+          </select>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-regions-2">Region</label>
+    <span class="CIC-form__helper" id="select-all-regions-2-helper-text">Your region of residence</span>
+      <select class="CIC-form__select" name="select-all-regions-2" id="select-all-regions-2" aria-describedby="select-all-regions-2-helper-text" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-regions-2">Region</label>
+    <span class="CIC-form__helper" id="select-all-regions-2-helper-text">Your region of residence</span>
+      <select class="CIC-form__select" name="select-all-regions-2" id="select-all-regions-2" aria-describedby="select-all-regions-2-helper-text" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="select-all-savings-programs-2">Savings programs you would like to claim</label>
+        <span class="CIC-form__helper" id="select-all-savings-programs-2-helper-text">Select all that apply</span>
+        <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+          <select name="select-all-savings-programs-2" id="select-all-savings-programs-2" aria-describedby="select-all-savings-programs-2-helper-text" multiple >
+            <option value="Stay CIC voucher">Stay CIC voucher</option>
+            <option value="Regional seniors travel card">Regional seniors travel card</option>
+            <option value="Toll relief">Toll relief</option>
+            <option value="First lap swimming voucher">First lap swimming voucher</option>
+            <option value="Active kids voucher">Active kids voucher</option>
+            <option value="Creative kids voucher">Creative kids voucher</option>
+            <option value="Energy made easy">Energy made easy</option>
+          </select>
+        </div>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-savings-programs-2">Savings programs you would like to claim</label>
+    <span class="CIC-form__helper" id="select-all-savings-programs-2-helper-text">Select all that apply</span>
+    <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+      <select name="select-all-savings-programs-2" id="select-all-savings-programs-2" aria-describedby="select-all-savings-programs-2-helper-text" multiple >
+        <option value="Stay CIC voucher">Stay CIC voucher</option>
+        <option value="Regional seniors travel card">Regional seniors travel card</option>
+        <option value="Toll relief">Toll relief</option>
+        <option value="First lap swimming voucher">First lap swimming voucher</option>
+        <option value="Active kids voucher">Active kids voucher</option>
+        <option value="Creative kids voucher">Creative kids voucher</option>
+        <option value="Energy made easy">Energy made easy</option>
+      </select>
+    </div>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-savings-programs-2">Savings programs you would like to claim</label>
+    <span class="CIC-form__helper" id="select-all-savings-programs-2-helper-text">Select all that apply</span>
+    <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+      <select name="select-all-savings-programs-2" id="select-all-savings-programs-2" aria-describedby="select-all-savings-programs-2-helper-text" multiple >
+        <option value="Stay CIC voucher">Stay CIC voucher</option>
+        <option value="Regional seniors travel card">Regional seniors travel card</option>
+        <option value="Toll relief">Toll relief</option>
+        <option value="First lap swimming voucher">First lap swimming voucher</option>
+        <option value="Active kids voucher">Active kids voucher</option>
+        <option value="Creative kids voucher">Creative kids voucher</option>
+        <option value="Energy made easy">Energy made easy</option>
+      </select>
+    </div>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h3>Error</h3>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label CIC-form__required" for="select-all-regions-3">Region<span class="sr-only"> (required)</span></label>
+          <select class="CIC-form__select" name="select-all-regions-3" id="select-all-regions-3" aria-invalid="true" ><option value="">Please select</option>
+            <option value="Central Coast">Central Coast</option>
+            <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+            <option value="Far West">Far West</option>
+            <option value="Hunter">Hunter</option>
+            <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+            <option value="New England &amp; North West">New England &amp; North West</option>
+            <option value="North Coast">North Coast</option>
+            <option value="Riverina Murray">Riverina Murray</option>
+          </select>
+        <span id="select-all-regions-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select a region of residence</span>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="select-all-regions-3">Region<span class="sr-only"> (required)</span></label>
+      <select class="CIC-form__select" name="select-all-regions-3" id="select-all-regions-3" aria-invalid="true" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>
+    <span id="select-all-regions-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select a region of residence</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="select-all-regions-3">Region<span class="sr-only"> (required)</span></label>
+      <select class="CIC-form__select" name="select-all-regions-3" id="select-all-regions-3" aria-invalid="true" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>
+    <span id="select-all-regions-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select a region of residence</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label CIC-form__required" for="select-all-savings-programs-3">Savings programs you would like to claim<span class="sr-only"> (required)</span></label>
+        <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+          <select name="select-all-savings-programs-3" id="select-all-savings-programs-3" aria-invalid="true" multiple >
+            <option value="Stay CIC voucher">Stay CIC voucher</option>
+            <option value="Regional seniors travel card">Regional seniors travel card</option>
+            <option value="Toll relief">Toll relief</option>
+            <option value="First lap swimming voucher">First lap swimming voucher</option>
+            <option value="Active kids voucher">Active kids voucher</option>
+            <option value="Creative kids voucher">Creative kids voucher</option>
+            <option value="Energy made easy">Energy made easy</option>
+          </select>
+        </div>
+        <span id="select-all-savings-programs-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select the savings programs you would like to claim</span>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="select-all-savings-programs-3">Savings programs you would like to claim<span class="sr-only"> (required)</span></label>
+    <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+      <select name="select-all-savings-programs-3" id="select-all-savings-programs-3" aria-invalid="true" multiple >
+        <option value="Stay CIC voucher">Stay CIC voucher</option>
+        <option value="Regional seniors travel card">Regional seniors travel card</option>
+        <option value="Toll relief">Toll relief</option>
+        <option value="First lap swimming voucher">First lap swimming voucher</option>
+        <option value="Active kids voucher">Active kids voucher</option>
+        <option value="Creative kids voucher">Creative kids voucher</option>
+        <option value="Energy made easy">Energy made easy</option>
+      </select>
+    </div>
+    <span id="select-all-savings-programs-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select the savings programs you would like to claim</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="select-all-savings-programs-3">Savings programs you would like to claim<span class="sr-only"> (required)</span></label>
+    <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+      <select name="select-all-savings-programs-3" id="select-all-savings-programs-3" aria-invalid="true" multiple >
+        <option value="Stay CIC voucher">Stay CIC voucher</option>
+        <option value="Regional seniors travel card">Regional seniors travel card</option>
+        <option value="Toll relief">Toll relief</option>
+        <option value="First lap swimming voucher">First lap swimming voucher</option>
+        <option value="Active kids voucher">Active kids voucher</option>
+        <option value="Creative kids voucher">Creative kids voucher</option>
+        <option value="Energy made easy">Energy made easy</option>
+      </select>
+    </div>
+    <span id="select-all-savings-programs-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select the savings programs you would like to claim</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h3>Validation</h3>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="select-all-regions-4">Region</label>
+          <select class="CIC-form__select" name="select-all-regions-4" id="select-all-regions-4" ><option value="">Please select</option>
+            <option value="Central Coast">Central Coast</option>
+            <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+            <option value="Far West">Far West</option>
+            <option value="Hunter">Hunter</option>
+            <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+            <option value="New England &amp; North West">New England &amp; North West</option>
+            <option value="North Coast">North Coast</option>
+            <option value="Riverina Murray">Riverina Murray</option>
+          </select>
+        <span id="select-all-regions-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>Your region is eligible for savings benefits</span>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-regions-4">Region</label>
+      <select class="CIC-form__select" name="select-all-regions-4" id="select-all-regions-4" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>
+    <span id="select-all-regions-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>Your region is eligible for savings benefits</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-regions-4">Region</label>
+      <select class="CIC-form__select" name="select-all-regions-4" id="select-all-regions-4" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>
+    <span id="select-all-regions-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>Your region is eligible for savings benefits</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="select-all-savings-programs-4">Savings programs you would like to claim</label>
+        <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+          <select name="select-all-savings-programs-4" id="select-all-savings-programs-4" multiple >
+            <option value="Stay CIC voucher">Stay CIC voucher</option>
+            <option value="Regional seniors travel card">Regional seniors travel card</option>
+            <option value="Toll relief">Toll relief</option>
+            <option value="First lap swimming voucher">First lap swimming voucher</option>
+            <option value="Active kids voucher">Active kids voucher</option>
+            <option value="Creative kids voucher">Creative kids voucher</option>
+            <option value="Energy made easy">Energy made easy</option>
+          </select>
+        </div>
+        <span id="select-all-savings-programs-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>The programs you have selected are available</span>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-savings-programs-4">Savings programs you would like to claim</label>
+    <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+      <select name="select-all-savings-programs-4" id="select-all-savings-programs-4" multiple >
+        <option value="Stay CIC voucher">Stay CIC voucher</option>
+        <option value="Regional seniors travel card">Regional seniors travel card</option>
+        <option value="Toll relief">Toll relief</option>
+        <option value="First lap swimming voucher">First lap swimming voucher</option>
+        <option value="Active kids voucher">Active kids voucher</option>
+        <option value="Creative kids voucher">Creative kids voucher</option>
+        <option value="Energy made easy">Energy made easy</option>
+      </select>
+    </div>
+    <span id="select-all-savings-programs-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>The programs you have selected are available</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="select-all-savings-programs-4">Savings programs you would like to claim</label>
+    <div class="CIC-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+      <select name="select-all-savings-programs-4" id="select-all-savings-programs-4" multiple >
+        <option value="Stay CIC voucher">Stay CIC voucher</option>
+        <option value="Regional seniors travel card">Regional seniors travel card</option>
+        <option value="Toll relief">Toll relief</option>
+        <option value="First lap swimming voucher">First lap swimming voucher</option>
+        <option value="Active kids voucher">Active kids voucher</option>
+        <option value="Creative kids voucher">Creative kids voucher</option>
+        <option value="Energy made easy">Energy made easy</option>
+      </select>
+    </div>
+    <span id="select-all-savings-programs-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>The programs you have selected are available</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </section>
+  </div>
+</div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

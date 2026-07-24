@@ -1,0 +1,1555 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Forms | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="Forms are used to capture data from users." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--narrow">
+      <div class="CIC-docs__intro CIC-docs__intro--tabs">
+        <div class="CIC-docs__container">
+          <h1>Forms</h1>
+          <p class="CIC-text--brand-supplementary"><span class="CIC-brand">&#128313;</span>&nbsp;Needed for CIC Insurance Branding</p>
+          <p class="CIC-intro">Forms are used to capture data from users.</p>
+          
+          <p>
+            <a class="CIC-link CIC-link--icon" target="_blank" href="https://www.figma.com/file/PVrERKnckLTlJSPk12gbtS/CIC-Digital-Design-System?node-id&#x3D;21298%3A21918">
+              <svg width="20" height="20" viewBox="0 0 33 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.003 48c4.416 0 8-3.584 8-8v-8h-8c-4.416 0-8 3.584-8 8s3.584 8 8 8z" fill="#0ACF83"></path><path d="M.003 24c0-4.416 3.584-8 8-8h8v16h-8c-4.416 0-8-3.584-8-8z" fill="#A259FF"></path><path d="M.003 8c0-4.416 3.584-8 8-8h8v16h-8c-4.416 0-8-3.584-8-8z" fill="#F24E1E"></path><path d="M16.003 0h8c4.416 0 8 3.584 8 8s-3.584 8-8 8h-8V0z" fill="#FF7262"></path><path d="M32.003 24c0 4.416-3.584 8-8 8s-8-3.584-8-8 3.584-8 8-8 8 3.584 8 8z" fill="#1ABCFE"></path></svg>
+              <span>Figma</span>
+            </a>
+          </p>
+        </div>
+      </div>
+<div class="CIC-docs__tabs">
+  <div class="CIC-tabs js-tabs CIC-docs-tabs">
+    <ul class="CIC-tabs__list">
+      <li class="CIC-tabs__list-item">
+        <a href="#section-guidance" class="CIC-tabs__link js-tabs-fixed">Guidance</a>
+      </li>
+      <li class="CIC-tabs__list-item">
+        <a href="#section-interactive-demo" class="CIC-tabs__link js-tabs-fixed">Demo &amp; Code</a>
+      </li>
+    </ul>
+    <section id="section-guidance" class="CIC-tabs__content">
+      <div class="CIC-docs__container">
+        
+<h2>Using forms</h2>
+<p>Forms comprise of the form itself and multiple form inputs. Each form is broken down into one or more fieldsets that groups the form elements into logical chunks that make sense to the user, for example, a delivery address.  </p>
+<p>Form elements are split into two key input types:</p>
+<p><strong>Freeform inputs</strong> - Free form text inputs are the most used components in forms. Use text fields and text areas for freeform entry. Text fields are used to input a short (single line) amount of freeform text. Text areas are used to input multiple lines of text, for example, a comments field. Use text areas when you expect longer entries.</p>
+<p><strong>Selection inputs</strong> - Selection inputs are used to select an option from a predefined list of available options. Selection options may be single-select or multi-select. Use a radio button list or dropdowns for single selections and checkboxes for multi-selections.  </p>
+<p>Do:</p>
+<ul>
+  <li>keep it one column - multiple columns easily disrupt a user’s vertical momentum</li>
+  <li>use field length input constraints - employ this for fields that have a defined character count like phone numbers and postcodes</li>
+  <li>mark required vs. optional form fields - you should always mark your form fields as “required” or “optional”. You can do this by writing “required” or “optional” in a small font next to your field, or by placing an asterisk next to your required fields</li>
+  <li>use top align labels - users complete top aligned labeled forms at a much higher rate than left-aligned labels. Top aligned labels also translate well on mobile.</li>
+  <li>make CTAs descriptive, state the intent of the action</li>
+  <li>specify errors inline, show the user where the error occurred and provide a reason.</li>
+</ul>
+<p>Do not:</p>
+<ul>
+  <li>use all caps</li>
+  <li>hide helper text</li>
+</ul>
+
+<h3>Dropdown</h3>
+<p>The dropdown pattern, also referred to as a drop list or select list, allows users to select a single option from a list of available options.</p>
+
+<h3>Single checkbox</h3>
+<p>Single checkboxes are used to confirm a user's selection or preference like agreeing to terms and conditions or registering for an option.</p>
+
+<h3>Checkbox list</h3>
+<p>Checkbox lists provide the user with a list of available items to choose from. The number of items a user can select should be indicated to the user on the page. Checkbox lists are used where multiple selections are permitted. Checkbox lists are wrapped in a fieldset to make them one logical group.</p>
+
+<h3>Radio list</h3>
+<p>Radio lists provide the user with a list of all available items from which a single selection is made. Radio lists are wrapped in a fieldset to make them one logical group.</p>
+
+<h2>How this component works</h2>
+<p><strong>Help text</strong></p>
+<p>Help text allows form designers to provide users with help to fill in a form element. Use help text to provide additional context, information or as an example to complete a field input.</p>
+<p><strong>Validation</strong></p>
+<p>Validation is used to let the user know when there is an issue with the data they have input. The validation that you input needs to clearly explain to the user what the issue is and what they need to do to address the error.</p>
+<p><strong>Organising form elements</strong></p>
+<ul>
+  <li>Differentiate primary from secondary actions</li>
+  <li>Group related information to ensure the user makes sense of the form faster</li>
+  <li>Enable autofill and autocorrect based on common attributes or responses, such as name and email, previously provided on the site or in the browser</li>
+  <li>Use multi-step forms in situations where there are multiple form fields, several of which could be split up into categories (such as “personal”, “shipping”, “billing”, and “payment review”).</li>
+</ul>
+
+<h2>Inactive fields and information</h2>
+<p>Do not render disabled form fields simply to display information. Avoid using <code>disabled=true</code> to present values, as this suggests interactivity when none is available. For read-only values, present the information outside of input fields, for example as plain text or within a summary list. This approach makes intent clear and avoids confusing users with inactive controls.</p>
+<p>More information: <a href="/docs/content/methods/inactive-fields.html">Inactive fields method</a></p>
+
+<h2>Accessibility</h2>
+<p>All components are responsive and designed to comply with WCAG 2.2 AA accessibility standards. Full compliance depends on using and configuring the components correctly.</p>
+
+<h3>Ensuring compliance through usage</h3>
+
+<h4>Redundant entry</h4>
+
+<p>To ensure WCAG 2.2 AA compliance for a full array of filter components, correct usage and configuration are vital. While each component provides a foundation for accessibility, it's essential to minimise redundant entry by retaining previously selected or entered filter values if a user revisits the page or refines their search. Ensure all filter options are clearly labelled and provide instructions where needed, so users understand the available choices and input formats. Additionally, allow users to modify their filter selections easily without resetting other filters.</p>
+
+<h4>Consistent help</h4>
+
+<p>Ensure each input, whether it's a text field, checkbox, radio button, dropdown, or date input, is clearly labelled with descriptive text to communicate its purpose. Consistent error messaging and validation feedback are crucial; provide users with clear, actionable instructions if errors occur, without requiring them to re-enter data unnecessarily. Keyboard navigation should be maintained across all inputs, with each respective field focus indicator allowing users to move easily between fields clearly.</p>
+
+<p>Following these practices will help create accessible, user-friendly forms that offer a seamless experience across various input types.</p>
+
+      </div>
+    </section>
+    <section id="section-interactive-demo" class="CIC-tabs__content">
+      <div class="CIC-docs__demo">
+        <div class="CIC-docs__external">
+          <div class="CIC-list CIC-list--8">
+            <a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/form/blank.html"><span>View in new window</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a><a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/form/theme.html"><span>View theming example</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a>
+          </div>
+        </div>
+
+<div class="CIC-tabs js-tabs">
+
+  <ul class="CIC-tabs__list">
+    <li><a href="#default" class="js-tabs-fixed">Default</a></li>
+    <li><a href="#error" class="js-tabs-fixed">Error</a></li>
+    <li><a href="#success" class="js-tabs-fixed">Success</a></li>
+  </ul>
+
+  <section id="default" class="CIC-tabs__content CIC-tabs__content--side-flush">
+<h3>Default</h3>
+
+<h4>Text field</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="form-text-2">Name</label>
+        <span class="CIC-form__helper" id="form-text-2-helper-text">As it appears on your identity document</span>
+        <input class="CIC-form__input" type="text" id="form-text-2" name="form-text-2" aria-describedby="form-text-2-helper-text"     >
+      </div>
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="form-textarea-2">Comment</label>
+        <span class="CIC-form__helper" id="form-textarea-2-helper-text">Maximum 500 characters</span>
+        <textarea class="CIC-form__input" name="textarea" id="form-textarea-2" aria-describedby="form-textarea-2-helper-text"   ></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-text-2">Name</label>
+    <span class="CIC-form__helper" id="form-text-2-helper-text">As it appears on your identity document</span>
+    <input class="CIC-form__input" type="text" id="form-text-2" name="form-text-2" aria-describedby="form-text-2-helper-text"     >
+  </div>
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-textarea-2">Comment</label>
+    <span class="CIC-form__helper" id="form-textarea-2-helper-text">Maximum 500 characters</span>
+    <textarea class="CIC-form__input" name="textarea" id="form-textarea-2" aria-describedby="form-textarea-2-helper-text"   ></textarea>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-text-2">Name</label>
+    <span class="CIC-form__helper" id="form-text-2-helper-text">As it appears on your identity document</span>
+    <input class="CIC-form__input" type="text" id="form-text-2" name="form-text-2" aria-describedby="form-text-2-helper-text"     >
+  </div>
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-textarea-2">Comment</label>
+    <span class="CIC-form__helper" id="form-textarea-2-helper-text">Maximum 500 characters</span>
+    <textarea class="CIC-form__input" name="textarea" id="form-textarea-2" aria-describedby="form-textarea-2-helper-text"   ></textarea>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Input group</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <div class="CIC-form__input-group">
+          <label class="sr-only" for="form-input-group-1">Search</label>
+          <input class="CIC-form__input" type="text" id="form-input-group-1" name="form-input-group-1" value=""   >
+          <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit">Search</button>
+        </div>
+      </div>
+      <div class="CIC-form__group">
+        <div class="CIC-form__input-group CIC-form__input-group--icon">
+          <label class="sr-only" for="form-input-group-icon-1">Search</label>
+          <input class="CIC-form__input" type="text" id="form-input-group-icon-1" name="form-input-group-icon-1" value=""   >
+          <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">search</span><span class="sr-only">Search</span></button>
+        </div>
+      </div>
+      <div class="CIC-form__group">
+        <div class="CIC-form__input-group CIC-form__input-group--icon">
+          <label class="sr-only" for="form-input-group-icon-2">Search</label>
+          <input class="CIC-form__input" type="text" id="form-input-group-icon-2" name="form-input-group-icon-2" value=""   >
+          <button class="CIC-button CIC-button--white CIC-button--flex" type="submit"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">search</span><span class="sr-only">Search</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <div class="CIC-form__input-group">
+      <label class="sr-only" for="form-input-group-1">Search</label>
+      <input class="CIC-form__input" type="text" id="form-input-group-1" name="form-input-group-1" value=""   >
+      <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit">Search</button>
+    </div>
+  </div>
+  <div class="CIC-form__group">
+    <div class="CIC-form__input-group CIC-form__input-group--icon">
+      <label class="sr-only" for="form-input-group-icon-1">Search</label>
+      <input class="CIC-form__input" type="text" id="form-input-group-icon-1" name="form-input-group-icon-1" value=""   >
+      <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">search</span><span class="sr-only">Search</span></button>
+    </div>
+  </div>
+  <div class="CIC-form__group">
+    <div class="CIC-form__input-group CIC-form__input-group--icon">
+      <label class="sr-only" for="form-input-group-icon-2">Search</label>
+      <input class="CIC-form__input" type="text" id="form-input-group-icon-2" name="form-input-group-icon-2" value=""   >
+      <button class="CIC-button CIC-button--white CIC-button--flex" type="submit"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">search</span><span class="sr-only">Search</span></button>
+    </div>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <div class="CIC-form__input-group">
+      <label class="sr-only" for="form-input-group-1">Search</label>
+      <input class="CIC-form__input" type="text" id="form-input-group-1" name="form-input-group-1" value=""   >
+      <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit">Search</button>
+    </div>
+  </div>
+  <div class="CIC-form__group">
+    <div class="CIC-form__input-group CIC-form__input-group--icon">
+      <label class="sr-only" for="form-input-group-icon-1">Search</label>
+      <input class="CIC-form__input" type="text" id="form-input-group-icon-1" name="form-input-group-icon-1" value=""   >
+      <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">search</span><span class="sr-only">Search</span></button>
+    </div>
+  </div>
+  <div class="CIC-form__group">
+    <div class="CIC-form__input-group CIC-form__input-group--icon">
+      <label class="sr-only" for="form-input-group-icon-2">Search</label>
+      <input class="CIC-form__input" type="text" id="form-input-group-icon-2" name="form-input-group-icon-2" value=""   >
+      <button class="CIC-button CIC-button--white CIC-button--flex" type="submit"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">search</span><span class="sr-only">Search</span></button>
+    </div>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Predictive list</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="form-predictive-text-1">Suburb</label>
+        <div class="CIC-form__predictive">
+          <input class="CIC-form__input" type="text" id="form-predictive-text-1" name="form-predictive-text-1" value="Horn" aria-autocomplete="list" autocomplete="off">
+          <ul class="CIC-form__predictive-list">
+            <li><a href="#"><span>Horn</span>sby</a></li>
+            <li><a href="#"><span>Horn</span>sby Heights</a></li>
+            <li><a href="#"><span>Horn</span>ingsea Park</a></li>
+          </ul>
+        </div>
+      </div>
+      <br><br><br><br><br><br>
+      <div class="CIC-form__group">
+        <div class="CIC-form__predictive">
+          <div class="CIC-form__input-group">
+            <label class="sr-only" for="form-predictive-group-1">Search</label>
+            <input class="CIC-form__input" type="text" id="form-predictive-group-1" name="form-predictive-group-1" value="Tran" aria-autocomplete="list" autocomplete="off"   >
+            <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit">Search</button>
+          </div>
+          <ul class="CIC-form__predictive-list">
+            <li><a href="#"><span>Tran</span>sport</a></li>
+            <li><a href="#">Road <span>Tran</span>sport</a></li>
+            <li><a href="#">Public <span>Tran</span>sport</a></li>
+          </ul>
+        </div>
+      </div>
+      <br><br><br><br><br><br>
+      <div class="CIC-form__group">
+        <div class="CIC-form__predictive">
+          <div class="CIC-form__input-group CIC-form__input-group--icon CIC-form__input-group--large">
+            <label class="sr-only" for="form-predictive-group-icon-1">Search</label>
+            <input class="CIC-form__input" type="text" id="form-predictive-group-icon-1" name="form-predictive-group-icon-1" value="Govern" aria-autocomplete="list" autocomplete="off"   >
+            <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">search</span><span class="sr-only">Search</span></button>
+          </div>
+          <ul class="CIC-form__predictive-list CIC-form__predictive-list--large">
+            <li><a href="#"><span>Govern</span>ment</a></li>
+            <li><a href="#"><span>Govern</span>ment payments</a></li>
+            <li><a href="#"><span>Govern</span>ance</a></li>
+          </ul>
+        </div>
+      </div>
+      <br><br><br><br><br><br>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-predictive-text-1">Suburb</label>
+    <div class="CIC-form__predictive">
+      <input class="CIC-form__input" type="text" id="form-predictive-text-1" name="form-predictive-text-1" value="Horn" aria-autocomplete="list" autocomplete="off">
+      <ul class="CIC-form__predictive-list">
+        <li><a href="#"><span>Horn</span>sby</a></li>
+        <li><a href="#"><span>Horn</span>sby Heights</a></li>
+        <li><a href="#"><span>Horn</span>ingsea Park</a></li>
+      </ul>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+  <div class="CIC-form__group">
+    <div class="CIC-form__predictive">
+      <div class="CIC-form__input-group">
+        <label class="sr-only" for="form-predictive-group-1">Search</label>
+        <input class="CIC-form__input" type="text" id="form-predictive-group-1" name="form-predictive-group-1" value="Tran" aria-autocomplete="list" autocomplete="off"   >
+        <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit">Search</button>
+      </div>
+      <ul class="CIC-form__predictive-list">
+        <li><a href="#"><span>Tran</span>sport</a></li>
+        <li><a href="#">Road <span>Tran</span>sport</a></li>
+        <li><a href="#">Public <span>Tran</span>sport</a></li>
+      </ul>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+  <div class="CIC-form__group">
+    <div class="CIC-form__predictive">
+      <div class="CIC-form__input-group CIC-form__input-group--icon CIC-form__input-group--large">
+        <label class="sr-only" for="form-predictive-group-icon-1">Search</label>
+        <input class="CIC-form__input" type="text" id="form-predictive-group-icon-1" name="form-predictive-group-icon-1" value="Govern" aria-autocomplete="list" autocomplete="off"   >
+        <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">search</span><span class="sr-only">Search</span></button>
+      </div>
+      <ul class="CIC-form__predictive-list CIC-form__predictive-list--large">
+        <li><a href="#"><span>Govern</span>ment</a></li>
+        <li><a href="#"><span>Govern</span>ment payments</a></li>
+        <li><a href="#"><span>Govern</span>ance</a></li>
+      </ul>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-predictive-text-1">Suburb</label>
+    <div class="CIC-form__predictive">
+      <input class="CIC-form__input" type="text" id="form-predictive-text-1" name="form-predictive-text-1" value="Horn" aria-autocomplete="list" autocomplete="off">
+      <ul class="CIC-form__predictive-list">
+        <li><a href="#"><span>Horn</span>sby</a></li>
+        <li><a href="#"><span>Horn</span>sby Heights</a></li>
+        <li><a href="#"><span>Horn</span>ingsea Park</a></li>
+      </ul>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+  <div class="CIC-form__group">
+    <div class="CIC-form__predictive">
+      <div class="CIC-form__input-group">
+        <label class="sr-only" for="form-predictive-group-1">Search</label>
+        <input class="CIC-form__input" type="text" id="form-predictive-group-1" name="form-predictive-group-1" value="Tran" aria-autocomplete="list" autocomplete="off"   >
+        <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit">Search</button>
+      </div>
+      <ul class="CIC-form__predictive-list">
+        <li><a href="#"><span>Tran</span>sport</a></li>
+        <li><a href="#">Road <span>Tran</span>sport</a></li>
+        <li><a href="#">Public <span>Tran</span>sport</a></li>
+      </ul>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+  <div class="CIC-form__group">
+    <div class="CIC-form__predictive">
+      <div class="CIC-form__input-group CIC-form__input-group--icon CIC-form__input-group--large">
+        <label class="sr-only" for="form-predictive-group-icon-1">Search</label>
+        <input class="CIC-form__input" type="text" id="form-predictive-group-icon-1" name="form-predictive-group-icon-1" value="Govern" aria-autocomplete="list" autocomplete="off"   >
+        <button class="CIC-button CIC-button--dark CIC-button--flex" type="submit"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">search</span><span class="sr-only">Search</span></button>
+      </div>
+      <ul class="CIC-form__predictive-list CIC-form__predictive-list--large">
+        <li><a href="#"><span>Govern</span>ment</a></li>
+        <li><a href="#"><span>Govern</span>ment payments</a></li>
+        <li><a href="#"><span>Govern</span>ance</a></li>
+      </ul>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Date</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <fieldset class="CIC-form__date">
+          <legend>
+            <span class="CIC-form__label">Date of birth</span>
+            <span id="form-date-2-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+          </legend>
+          <div class="CIC-form__date-wrapper">
+            <div class="CIC-form__date-input">
+              <label for="form-date-2-day" class="CIC-form__label CIC-form__label--small">Day</label>
+              <input  type="text" maxlength="2" id="form-date-2-day" name="form-date-2-day" class="CIC-form__input"  >
+            </div>
+            <div class="CIC-form__date-input">
+              <label for="form-date-2-month" class="CIC-form__label CIC-form__label--small">Month</label>
+              <input  type="text" maxlength="2" id="form-date-2-month" name="form-date-2-month" class="CIC-form__input"  >
+            </div>
+            <div class="CIC-form__date-input CIC-form__date-input--large">
+              <label for="form-date-2-year" class="CIC-form__label CIC-form__label--small">Year</label>
+              <input  type="text" maxlength="4" id="form-date-2-year" name="form-date-2-year" class="CIC-form__input"  >
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__date">
+      <legend>
+        <span class="CIC-form__label">Date of birth</span>
+        <span id="form-date-2-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+      </legend>
+      <div class="CIC-form__date-wrapper">
+        <div class="CIC-form__date-input">
+          <label for="form-date-2-day" class="CIC-form__label CIC-form__label--small">Day</label>
+          <input  type="text" maxlength="2" id="form-date-2-day" name="form-date-2-day" class="CIC-form__input"  >
+        </div>
+        <div class="CIC-form__date-input">
+          <label for="form-date-2-month" class="CIC-form__label CIC-form__label--small">Month</label>
+          <input  type="text" maxlength="2" id="form-date-2-month" name="form-date-2-month" class="CIC-form__input"  >
+        </div>
+        <div class="CIC-form__date-input CIC-form__date-input--large">
+          <label for="form-date-2-year" class="CIC-form__label CIC-form__label--small">Year</label>
+          <input  type="text" maxlength="4" id="form-date-2-year" name="form-date-2-year" class="CIC-form__input"  >
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__date">
+      <legend>
+        <span class="CIC-form__label">Date of birth</span>
+        <span id="form-date-2-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+      </legend>
+      <div class="CIC-form__date-wrapper">
+        <div class="CIC-form__date-input">
+          <label for="form-date-2-day" class="CIC-form__label CIC-form__label--small">Day</label>
+          <input  type="text" maxlength="2" id="form-date-2-day" name="form-date-2-day" class="CIC-form__input"  >
+        </div>
+        <div class="CIC-form__date-input">
+          <label for="form-date-2-month" class="CIC-form__label CIC-form__label--small">Month</label>
+          <input  type="text" maxlength="2" id="form-date-2-month" name="form-date-2-month" class="CIC-form__input"  >
+        </div>
+        <div class="CIC-form__date-input CIC-form__date-input--large">
+          <label for="form-date-2-year" class="CIC-form__label CIC-form__label--small">Year</label>
+          <input  type="text" maxlength="4" id="form-date-2-year" name="form-date-2-year" class="CIC-form__input"  >
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Select</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="form-select-2">Region</label>
+        <span class="CIC-form__helper" id="form-select-2-helper-text">Your region of residence</span>
+          <select class="CIC-form__select" name="form-select-2" id="form-select-2" aria-describedby="form-select-2-helper-text" ><option value="">Please select</option>
+            <option value="Central Coast">Central Coast</option>
+            <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+            <option value="Far West">Far West</option>
+            <option value="Hunter">Hunter</option>
+            <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+            <option value="New England &amp; North West">New England &amp; North West</option>
+            <option value="North Coast">North Coast</option>
+            <option value="Riverina Murray">Riverina Murray</option>
+          </select>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-select-2">Region</label>
+    <span class="CIC-form__helper" id="form-select-2-helper-text">Your region of residence</span>
+      <select class="CIC-form__select" name="form-select-2" id="form-select-2" aria-describedby="form-select-2-helper-text" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-select-2">Region</label>
+    <span class="CIC-form__helper" id="form-select-2-helper-text">Your region of residence</span>
+      <select class="CIC-form__select" name="form-select-2" id="form-select-2" aria-describedby="form-select-2-helper-text" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Checkbox</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <fieldset class="CIC-form__fieldset">
+          <legend>
+            <span class="CIC-form__legend">Category</span>
+            <span class="CIC-form__helper">Select all that applies to you</span>
+          </legend>
+          <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-2" id="form-checkbox-multi-2-a"  >
+          <label class="CIC-form__checkbox-label" for="form-checkbox-multi-2-a">Customer Service</label>
+          <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-2" id="form-checkbox-multi-2-b"  >
+          <label class="CIC-form__checkbox-label" for="form-checkbox-multi-2-b">Communities and Justice</label>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend">Category</span>
+        <span class="CIC-form__helper">Select all that applies to you</span>
+      </legend>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-2" id="form-checkbox-multi-2-a"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-2-a">Customer Service</label>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-2" id="form-checkbox-multi-2-b"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-2-b">Communities and Justice</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend">Category</span>
+        <span class="CIC-form__helper">Select all that applies to you</span>
+      </legend>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-2" id="form-checkbox-multi-2-a"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-2-a">Customer Service</label>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-2" id="form-checkbox-multi-2-b"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-2-b">Communities and Justice</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Radio buttons</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <fieldset class="CIC-form__fieldset">
+          <legend>
+            <span class="CIC-form__legend">Topic</span>
+            <span class="CIC-form__helper">Select closest match</span>
+          </legend>
+          <input class="CIC-form__radio-input" type="radio" name="form-radio-2" id="form-radio-2-a" >
+          <label class="CIC-form__radio-label" for="form-radio-2-a">CIC Insurance</label>
+          <input class="CIC-form__radio-input" type="radio" name="form-radio-2" id="form-radio-2-b" >
+          <label class="CIC-form__radio-label" for="form-radio-2-b">Business and Economy</label>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend">Topic</span>
+        <span class="CIC-form__helper">Select closest match</span>
+      </legend>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-2" id="form-radio-2-a" >
+      <label class="CIC-form__radio-label" for="form-radio-2-a">CIC Insurance</label>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-2" id="form-radio-2-b" >
+      <label class="CIC-form__radio-label" for="form-radio-2-b">Business and Economy</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend">Topic</span>
+        <span class="CIC-form__helper">Select closest match</span>
+      </legend>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-2" id="form-radio-2-a" >
+      <label class="CIC-form__radio-label" for="form-radio-2-a">CIC Insurance</label>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-2" id="form-radio-2-b" >
+      <label class="CIC-form__radio-label" for="form-radio-2-b">Business and Economy</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+    <section id="error" class="CIC-tabs__content CIC-tabs__content--side-flush">
+<h3>Error</h3>
+
+<h4>Text Fields</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label CIC-form__required" for="form-text-3">Name<span class="sr-only"> (required)</span></label>
+        <span class="CIC-form__helper" id="form-text-3-helper-text">As it appears on your identity document</span>
+        <input class="CIC-form__input" type="text" id="form-text-3" name="form-text-3" aria-describedby="form-text-3-helper-text" aria-invalid="true"     >
+        <span class="CIC-form__helper CIC-form__helper--error" id="form-text-3-error-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+      </div>
+      <div class="CIC-form__group">
+        <label class="CIC-form__label CIC-form__required" for="form-textarea-3">Comment<span class="sr-only"> (required)</span></label>
+        <span class="CIC-form__helper" id="form-textarea-3-helper-text">Maximum 500 characters</span>
+        <textarea class="CIC-form__input" name="textarea" id="form-textarea-3" aria-describedby="form-textarea-3-helper-text" aria-invalid="true"   ></textarea>
+        <span class="CIC-form__helper CIC-form__helper--error" id="form-textarea-3-error-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="form-text-3">Name<span class="sr-only"> (required)</span></label>
+    <span class="CIC-form__helper" id="form-text-3-helper-text">As it appears on your identity document</span>
+    <input class="CIC-form__input" type="text" id="form-text-3" name="form-text-3" aria-describedby="form-text-3-helper-text" aria-invalid="true"     >
+    <span class="CIC-form__helper CIC-form__helper--error" id="form-text-3-error-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+  </div>
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="form-textarea-3">Comment<span class="sr-only"> (required)</span></label>
+    <span class="CIC-form__helper" id="form-textarea-3-helper-text">Maximum 500 characters</span>
+    <textarea class="CIC-form__input" name="textarea" id="form-textarea-3" aria-describedby="form-textarea-3-helper-text" aria-invalid="true"   ></textarea>
+    <span class="CIC-form__helper CIC-form__helper--error" id="form-textarea-3-error-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="form-text-3">Name<span class="sr-only"> (required)</span></label>
+    <span class="CIC-form__helper" id="form-text-3-helper-text">As it appears on your identity document</span>
+    <input class="CIC-form__input" type="text" id="form-text-3" name="form-text-3" aria-describedby="form-text-3-helper-text" aria-invalid="true"     >
+    <span class="CIC-form__helper CIC-form__helper--error" id="form-text-3-error-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+  </div>
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="form-textarea-3">Comment<span class="sr-only"> (required)</span></label>
+    <span class="CIC-form__helper" id="form-textarea-3-helper-text">Maximum 500 characters</span>
+    <textarea class="CIC-form__input" name="textarea" id="form-textarea-3" aria-describedby="form-textarea-3-helper-text" aria-invalid="true"   ></textarea>
+    <span class="CIC-form__helper CIC-form__helper--error" id="form-textarea-3-error-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Date</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <fieldset class="CIC-form__date">
+          <legend>
+            <span class="CIC-form__label CIC-form__required">Date of birth<span class="sr-only"> (required)</span></span>
+            <span id="form-date-3-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+          </legend>
+          <div class="CIC-form__date-wrapper">
+            <div class="CIC-form__date-input">
+              <label for="form-date-3-day" class="CIC-form__label CIC-form__label--small">Day</label>
+              <input  type="text" maxlength="2" id="form-date-3-day" name="form-date-3-day" class="CIC-form__input" aria-invalid="true"  >
+            </div>
+            <div class="CIC-form__date-input">
+              <label for="form-date-3-month" class="CIC-form__label CIC-form__label--small">Month</label>
+              <input  type="text" maxlength="2" id="form-date-3-month" name="form-date-3-month" class="CIC-form__input" aria-invalid="true"  >
+            </div>
+            <div class="CIC-form__date-input CIC-form__date-input--large">
+              <label for="form-date-3-year" class="CIC-form__label CIC-form__label--small">Year</label>
+              <input  type="text" maxlength="4" id="form-date-3-year" name="form-date-3-year" class="CIC-form__input" aria-invalid="true"  >
+            </div>
+          </div>
+        </fieldset>
+        <span id="form-date-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__date">
+      <legend>
+        <span class="CIC-form__label CIC-form__required">Date of birth<span class="sr-only"> (required)</span></span>
+        <span id="form-date-3-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+      </legend>
+      <div class="CIC-form__date-wrapper">
+        <div class="CIC-form__date-input">
+          <label for="form-date-3-day" class="CIC-form__label CIC-form__label--small">Day</label>
+          <input  type="text" maxlength="2" id="form-date-3-day" name="form-date-3-day" class="CIC-form__input" aria-invalid="true"  >
+        </div>
+        <div class="CIC-form__date-input">
+          <label for="form-date-3-month" class="CIC-form__label CIC-form__label--small">Month</label>
+          <input  type="text" maxlength="2" id="form-date-3-month" name="form-date-3-month" class="CIC-form__input" aria-invalid="true"  >
+        </div>
+        <div class="CIC-form__date-input CIC-form__date-input--large">
+          <label for="form-date-3-year" class="CIC-form__label CIC-form__label--small">Year</label>
+          <input  type="text" maxlength="4" id="form-date-3-year" name="form-date-3-year" class="CIC-form__input" aria-invalid="true"  >
+        </div>
+      </div>
+    </fieldset>
+    <span id="form-date-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__date">
+      <legend>
+        <span class="CIC-form__label CIC-form__required">Date of birth<span class="sr-only"> (required)</span></span>
+        <span id="form-date-3-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+      </legend>
+      <div class="CIC-form__date-wrapper">
+        <div class="CIC-form__date-input">
+          <label for="form-date-3-day" class="CIC-form__label CIC-form__label--small">Day</label>
+          <input  type="text" maxlength="2" id="form-date-3-day" name="form-date-3-day" class="CIC-form__input" aria-invalid="true"  >
+        </div>
+        <div class="CIC-form__date-input">
+          <label for="form-date-3-month" class="CIC-form__label CIC-form__label--small">Month</label>
+          <input  type="text" maxlength="2" id="form-date-3-month" name="form-date-3-month" class="CIC-form__input" aria-invalid="true"  >
+        </div>
+        <div class="CIC-form__date-input CIC-form__date-input--large">
+          <label for="form-date-3-year" class="CIC-form__label CIC-form__label--small">Year</label>
+          <input  type="text" maxlength="4" id="form-date-3-year" name="form-date-3-year" class="CIC-form__input" aria-invalid="true"  >
+        </div>
+      </div>
+    </fieldset>
+    <span id="form-date-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Select</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label CIC-form__required" for="form-select-3">Region<span class="sr-only"> (required)</span></label>
+        <span class="CIC-form__helper" id="form-select-3-helper-text">Your region of residence</span>
+          <select class="CIC-form__select" name="form-select-3" id="form-select-3" aria-describedby="form-select-3-helper-text" aria-invalid="true" ><option value="">Please select</option>
+            <option value="Central Coast">Central Coast</option>
+            <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+            <option value="Far West">Far West</option>
+            <option value="Hunter">Hunter</option>
+            <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+            <option value="New England &amp; North West">New England &amp; North West</option>
+            <option value="North Coast">North Coast</option>
+            <option value="Riverina Murray">Riverina Murray</option>
+          </select>
+        <span id="form-select-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="form-select-3">Region<span class="sr-only"> (required)</span></label>
+    <span class="CIC-form__helper" id="form-select-3-helper-text">Your region of residence</span>
+      <select class="CIC-form__select" name="form-select-3" id="form-select-3" aria-describedby="form-select-3-helper-text" aria-invalid="true" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>
+    <span id="form-select-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label CIC-form__required" for="form-select-3">Region<span class="sr-only"> (required)</span></label>
+    <span class="CIC-form__helper" id="form-select-3-helper-text">Your region of residence</span>
+      <select class="CIC-form__select" name="form-select-3" id="form-select-3" aria-describedby="form-select-3-helper-text" aria-invalid="true" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>
+    <span id="form-select-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Checkboxes</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-3" id="form-checkbox-3" aria-describedby="form-checkbox-3-error-text" aria-invalid="true"  >
+        <label class="CIC-form__checkbox-label" for="form-checkbox-3">I agree to terms and conditions<span class="CIC-form__required"></span><span class="sr-only"> (required)</span></label>
+        <span id="form-checkbox-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+      </div>
+      <div class="CIC-form__group">
+        <fieldset class="CIC-form__fieldset">
+          <legend>
+            <span class="CIC-form__legend CIC-form__required">Category<span class="sr-only"> (required)</span></span>
+            <span class="CIC-form__helper">Select all that applies to you</span>
+            <span class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+          </legend>
+          <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-3" id="form-checkbox-multi-3-a"  >
+          <label class="CIC-form__checkbox-label" for="form-checkbox-multi-3-a">Customer Service</label>
+          <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-3" id="form-checkbox-multi-3-b"  >
+          <label class="CIC-form__checkbox-label" for="form-checkbox-multi-3-b">Communities and Justice</label>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-3" id="form-checkbox-3" aria-describedby="form-checkbox-3-error-text" aria-invalid="true"  >
+    <label class="CIC-form__checkbox-label" for="form-checkbox-3">I agree to terms and conditions<span class="CIC-form__required"></span><span class="sr-only"> (required)</span></label>
+    <span id="form-checkbox-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+  </div>
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend CIC-form__required">Category<span class="sr-only"> (required)</span></span>
+        <span class="CIC-form__helper">Select all that applies to you</span>
+        <span class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+      </legend>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-3" id="form-checkbox-multi-3-a"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-3-a">Customer Service</label>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-3" id="form-checkbox-multi-3-b"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-3-b">Communities and Justice</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-3" id="form-checkbox-3" aria-describedby="form-checkbox-3-error-text" aria-invalid="true"  >
+    <label class="CIC-form__checkbox-label" for="form-checkbox-3">I agree to terms and conditions<span class="CIC-form__required"></span><span class="sr-only"> (required)</span></label>
+    <span id="form-checkbox-3-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+  </div>
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend CIC-form__required">Category<span class="sr-only"> (required)</span></span>
+        <span class="CIC-form__helper">Select all that applies to you</span>
+        <span class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+      </legend>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-3" id="form-checkbox-multi-3-a"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-3-a">Customer Service</label>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-3" id="form-checkbox-multi-3-b"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-3-b">Communities and Justice</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Radio buttons</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <fieldset class="CIC-form__fieldset">
+          <legend>
+            <span class="CIC-form__legend CIC-form__required">Topic<span class="sr-only"> (required)</span></span>
+            <span class="CIC-form__helper">Select closest match</span>
+            <span class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+          </legend>
+          <input class="CIC-form__radio-input" type="radio" name="form-radio-3" id="form-radio-3-a" >
+          <label class="CIC-form__radio-label" for="form-radio-3-a">CIC Insurance</label>
+          <input class="CIC-form__radio-input" type="radio" name="form-radio-3" id="form-radio-3-b" >
+          <label class="CIC-form__radio-label" for="form-radio-3-b">Business and Economy</label>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend CIC-form__required">Topic<span class="sr-only"> (required)</span></span>
+        <span class="CIC-form__helper">Select closest match</span>
+        <span class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+      </legend>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-3" id="form-radio-3-a" >
+      <label class="CIC-form__radio-label" for="form-radio-3-a">CIC Insurance</label>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-3" id="form-radio-3-b" >
+      <label class="CIC-form__radio-label" for="form-radio-3-b">Business and Economy</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend CIC-form__required">Topic<span class="sr-only"> (required)</span></span>
+        <span class="CIC-form__helper">Select closest match</span>
+        <span class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+      </legend>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-3" id="form-radio-3-a" >
+      <label class="CIC-form__radio-label" for="form-radio-3-a">CIC Insurance</label>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-3" id="form-radio-3-b" >
+      <label class="CIC-form__radio-label" for="form-radio-3-b">Business and Economy</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <section id="success" class="CIC-tabs__content CIC-tabs__content--side-flush">
+<h3>Success</h3>
+
+<h4>Text Fields</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="form-text-4">Name</label>
+        <span class="CIC-form__helper" id="form-text-4-helper-text">As it appears on your identity document</span>
+        <input class="CIC-form__input" type="text" id="form-text-4" name="form-text-4" aria-describedby="form-text-4-helper-text"     >
+        <span class="CIC-form__helper CIC-form__helper--valid" id="form-text-4-valid-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+      </div>
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="form-textarea-4">Comment</label>
+        <span class="CIC-form__helper" id="form-textarea-4-helper-text">Maximum 500 characters</span>
+        <textarea class="CIC-form__input" name="textarea" id="form-textarea-4" aria-describedby="form-textarea-4-helper-text"   ></textarea>
+        <span class="CIC-form__helper CIC-form__helper--valid" id="form-textarea-4-valid-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-text-4">Name</label>
+    <span class="CIC-form__helper" id="form-text-4-helper-text">As it appears on your identity document</span>
+    <input class="CIC-form__input" type="text" id="form-text-4" name="form-text-4" aria-describedby="form-text-4-helper-text"     >
+    <span class="CIC-form__helper CIC-form__helper--valid" id="form-text-4-valid-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+  </div>
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-textarea-4">Comment</label>
+    <span class="CIC-form__helper" id="form-textarea-4-helper-text">Maximum 500 characters</span>
+    <textarea class="CIC-form__input" name="textarea" id="form-textarea-4" aria-describedby="form-textarea-4-helper-text"   ></textarea>
+    <span class="CIC-form__helper CIC-form__helper--valid" id="form-textarea-4-valid-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-text-4">Name</label>
+    <span class="CIC-form__helper" id="form-text-4-helper-text">As it appears on your identity document</span>
+    <input class="CIC-form__input" type="text" id="form-text-4" name="form-text-4" aria-describedby="form-text-4-helper-text"     >
+    <span class="CIC-form__helper CIC-form__helper--valid" id="form-text-4-valid-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+  </div>
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-textarea-4">Comment</label>
+    <span class="CIC-form__helper" id="form-textarea-4-helper-text">Maximum 500 characters</span>
+    <textarea class="CIC-form__input" name="textarea" id="form-textarea-4" aria-describedby="form-textarea-4-helper-text"   ></textarea>
+    <span class="CIC-form__helper CIC-form__helper--valid" id="form-textarea-4-valid-text"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Date</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <fieldset class="CIC-form__date">
+          <legend>
+            <span class="CIC-form__label">Date of birth</span>
+            <span id="form-date-4-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+          </legend>
+          <div class="CIC-form__date-wrapper">
+            <div class="CIC-form__date-input">
+              <label for="form-date-4-day" class="CIC-form__label CIC-form__label--small">Day</label>
+              <input  type="text" maxlength="2" id="form-date-4-day" name="form-date-4-day" class="CIC-form__input"  >
+            </div>
+            <div class="CIC-form__date-input">
+              <label for="form-date-4-month" class="CIC-form__label CIC-form__label--small">Month</label>
+              <input  type="text" maxlength="2" id="form-date-4-month" name="form-date-4-month" class="CIC-form__input"  >
+            </div>
+            <div class="CIC-form__date-input CIC-form__date-input--large">
+              <label for="form-date-4-year" class="CIC-form__label CIC-form__label--small">Year</label>
+              <input  type="text" maxlength="4" id="form-date-4-year" name="form-date-4-year" class="CIC-form__input"  >
+            </div>
+          </div>
+        </fieldset>
+        
+        <span id="form-date-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__date">
+      <legend>
+        <span class="CIC-form__label">Date of birth</span>
+        <span id="form-date-4-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+      </legend>
+      <div class="CIC-form__date-wrapper">
+        <div class="CIC-form__date-input">
+          <label for="form-date-4-day" class="CIC-form__label CIC-form__label--small">Day</label>
+          <input  type="text" maxlength="2" id="form-date-4-day" name="form-date-4-day" class="CIC-form__input"  >
+        </div>
+        <div class="CIC-form__date-input">
+          <label for="form-date-4-month" class="CIC-form__label CIC-form__label--small">Month</label>
+          <input  type="text" maxlength="2" id="form-date-4-month" name="form-date-4-month" class="CIC-form__input"  >
+        </div>
+        <div class="CIC-form__date-input CIC-form__date-input--large">
+          <label for="form-date-4-year" class="CIC-form__label CIC-form__label--small">Year</label>
+          <input  type="text" maxlength="4" id="form-date-4-year" name="form-date-4-year" class="CIC-form__input"  >
+        </div>
+      </div>
+    </fieldset>
+    
+    <span id="form-date-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__date">
+      <legend>
+        <span class="CIC-form__label">Date of birth</span>
+        <span id="form-date-4-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+      </legend>
+      <div class="CIC-form__date-wrapper">
+        <div class="CIC-form__date-input">
+          <label for="form-date-4-day" class="CIC-form__label CIC-form__label--small">Day</label>
+          <input  type="text" maxlength="2" id="form-date-4-day" name="form-date-4-day" class="CIC-form__input"  >
+        </div>
+        <div class="CIC-form__date-input">
+          <label for="form-date-4-month" class="CIC-form__label CIC-form__label--small">Month</label>
+          <input  type="text" maxlength="2" id="form-date-4-month" name="form-date-4-month" class="CIC-form__input"  >
+        </div>
+        <div class="CIC-form__date-input CIC-form__date-input--large">
+          <label for="form-date-4-year" class="CIC-form__label CIC-form__label--small">Year</label>
+          <input  type="text" maxlength="4" id="form-date-4-year" name="form-date-4-year" class="CIC-form__input"  >
+        </div>
+      </div>
+    </fieldset>
+    
+    <span id="form-date-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Select</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <label class="CIC-form__label" for="form-select-4">Region</label>
+        <span class="CIC-form__helper" id="form-select-4-helper-text">Your region of residence</span>
+          <select class="CIC-form__select" name="form-select-4" id="form-select-4" aria-describedby="form-select-4-helper-text" ><option value="">Please select</option>
+            <option value="Central Coast">Central Coast</option>
+            <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+            <option value="Far West">Far West</option>
+            <option value="Hunter">Hunter</option>
+            <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+            <option value="New England &amp; North West">New England &amp; North West</option>
+            <option value="North Coast">North Coast</option>
+            <option value="Riverina Murray">Riverina Murray</option>
+          </select>
+        <span id="form-select-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>  </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-select-4">Region</label>
+    <span class="CIC-form__helper" id="form-select-4-helper-text">Your region of residence</span>
+      <select class="CIC-form__select" name="form-select-4" id="form-select-4" aria-describedby="form-select-4-helper-text" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>
+    <span id="form-select-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <label class="CIC-form__label" for="form-select-4">Region</label>
+    <span class="CIC-form__helper" id="form-select-4-helper-text">Your region of residence</span>
+      <select class="CIC-form__select" name="form-select-4" id="form-select-4" aria-describedby="form-select-4-helper-text" ><option value="">Please select</option>
+        <option value="Central Coast">Central Coast</option>
+        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+        <option value="Far West">Far West</option>
+        <option value="Hunter">Hunter</option>
+        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+        <option value="New England &amp; North West">New England &amp; North West</option>
+        <option value="North Coast">North Coast</option>
+        <option value="Riverina Murray">Riverina Murray</option>
+      </select>
+    <span id="form-select-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Checkboxes</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-4" id="form-checkbox-4"  >
+        <label class="CIC-form__checkbox-label" for="form-checkbox-4">I agree to terms and conditions</label>
+        <span id="form-checkbox-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+      </div>
+      <div class="CIC-form__group">
+        <fieldset class="CIC-form__fieldset">
+          <legend>
+            <span class="CIC-form__legend">Category</span>
+            <span class="CIC-form__helper">Select all that applies to you</span>
+            <span class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+          </legend>
+          <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-4" id="form-checkbox-multi-4-a"  >
+          <label class="CIC-form__checkbox-label" for="form-checkbox-multi-4-a">Customer Service</label>
+          <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-4" id="form-checkbox-multi-4-b"  >
+          <label class="CIC-form__checkbox-label" for="form-checkbox-multi-4-b">Communities and Justice</label>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-4" id="form-checkbox-4"  >
+    <label class="CIC-form__checkbox-label" for="form-checkbox-4">I agree to terms and conditions</label>
+    <span id="form-checkbox-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+  </div>
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend">Category</span>
+        <span class="CIC-form__helper">Select all that applies to you</span>
+        <span class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+      </legend>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-4" id="form-checkbox-multi-4-a"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-4-a">Customer Service</label>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-4" id="form-checkbox-multi-4-b"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-4-b">Communities and Justice</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-4" id="form-checkbox-4"  >
+    <label class="CIC-form__checkbox-label" for="form-checkbox-4">I agree to terms and conditions</label>
+    <span id="form-checkbox-4-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+  </div>
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend">Category</span>
+        <span class="CIC-form__helper">Select all that applies to you</span>
+        <span class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+      </legend>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-4" id="form-checkbox-multi-4-a"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-4-a">Customer Service</label>
+      <input class="CIC-form__checkbox-input" type="checkbox" name="form-checkbox-multi-4" id="form-checkbox-multi-4-b"  >
+      <label class="CIC-form__checkbox-label" for="form-checkbox-multi-4-b">Communities and Justice</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Radio buttons</h4>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-form">
+      <div class="CIC-form__group">
+        <fieldset class="CIC-form__fieldset">
+          <legend>
+            <span class="CIC-form__legend">Topic</span>
+            <span class="CIC-form__helper">Select closest match</span>
+            <span class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+          </legend>
+          <input class="CIC-form__radio-input" type="radio" name="form-radio-4" id="form-radio-4-a" >
+          <label class="CIC-form__radio-label" for="form-radio-4-a">CIC Insurance</label>
+          <input class="CIC-form__radio-input" type="radio" name="form-radio-4" id="form-radio-4-b" >
+          <label class="CIC-form__radio-label" for="form-radio-4-b">Business and Economy</label>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend">Topic</span>
+        <span class="CIC-form__helper">Select closest match</span>
+        <span class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+      </legend>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-4" id="form-radio-4-a" >
+      <label class="CIC-form__radio-label" for="form-radio-4-a">CIC Insurance</label>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-4" id="form-radio-4-b" >
+      <label class="CIC-form__radio-label" for="form-radio-4-b">Business and Economy</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-form">
+  <div class="CIC-form__group">
+    <fieldset class="CIC-form__fieldset">
+      <legend>
+        <span class="CIC-form__legend">Topic</span>
+        <span class="CIC-form__helper">Select closest match</span>
+        <span class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+      </legend>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-4" id="form-radio-4-a" >
+      <label class="CIC-form__radio-label" for="form-radio-4-a">CIC Insurance</label>
+      <input class="CIC-form__radio-input" type="radio" name="form-radio-4" id="form-radio-4-b" >
+      <label class="CIC-form__radio-label" for="form-radio-4-b">Business and Economy</label>
+    </fieldset>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+</div>
+      </div>
+    </section>
+  </div>
+</div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

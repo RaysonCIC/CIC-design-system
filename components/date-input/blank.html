@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Date input | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body>
+
+
+
+<section class="CIC-section">
+  <div class="CIC-container CIC-p-y-sm">
+    <div class="CIC-layout">
+      <main class="CIC-layout__main">
+        
+        <div class="CIC-form">
+          <div class="CIC-form__group">
+            <fieldset class="CIC-form__date">
+              <legend>
+                <span class="CIC-form__label">Date of birth</span>
+                <span id="date-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+              </legend>
+              <div class="CIC-form__date-wrapper">
+                <div class="CIC-form__date-input">
+                  <label for="date-day" class="CIC-form__label CIC-form__label--small">Day</label>
+                  <input type="text" maxlength="2" id="date-day" name="date-day" autocomplete="bday-day" class="CIC-form__input">
+                </div>
+                <div class="CIC-form__date-input">
+                  <label for="date-month" class="CIC-form__label CIC-form__label--small">Month</label>
+                  <input type="text" maxlength="2" id="date-month" name="date-month" autocomplete="bday-month" class="CIC-form__input">
+                </div>
+                <div class="CIC-form__date-input CIC-form__date-input--large">
+                  <label for="date-year" class="CIC-form__label CIC-form__label--small">Year</label>
+                  <input type="text" maxlength="4" id="date-year" name="date-year" autocomplete="bday-year" class="CIC-form__input">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        
+        <div class="CIC-form">
+          <div class="CIC-form__group">
+            <fieldset class="CIC-form__date">
+              <legend>
+                <span class="CIC-form__label CIC-form__required">Date of birth<span class="sr-only"> (required)</span></span>
+                <span id="date-error-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+              </legend>
+              <div class="CIC-form__date-wrapper">
+                <div class="CIC-form__date-input">
+                  <label for="date-error-day" class="CIC-form__label CIC-form__label--small">Day</label>
+                  <input type="text" maxlength="2" id="date-error-day" name="date-error-day" autocomplete="bday-day" class="CIC-form__input" aria-invalid="true">
+                </div>
+                <div class="CIC-form__date-input">
+                  <label for="date-error-month" class="CIC-form__label CIC-form__label--small">Month</label>
+                  <input type="text" maxlength="2" id="date-error-month" name="date-error-month" autocomplete="bday-month" class="CIC-form__input" aria-invalid="true">
+                </div>
+                <div class="CIC-form__date-input CIC-form__date-input--large">
+                  <label for="date-error-year" class="CIC-form__label CIC-form__label--small">Year</label>
+                  <input type="text" maxlength="4" id="date-error-year" name="date-error-year" autocomplete="bday-year" class="CIC-form__input" aria-invalid="true">
+                </div>
+              </div>
+            </fieldset>
+            <span id="date-error-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+          </div>
+        </div>
+        
+        <div class="CIC-form">
+          <div class="CIC-form__group">
+            <fieldset class="CIC-form__date">
+              <legend>
+                <span class="CIC-form__label">Date of birth</span>
+                <span id="date-success-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+              </legend>
+              <div class="CIC-form__date-wrapper">
+                <div class="CIC-form__date-input">
+                  <label for="date-success-day" class="CIC-form__label CIC-form__label--small">Day</label>
+                  <input type="text" maxlength="2" id="date-success-day" name="date-success-day" autocomplete="bday-day" class="CIC-form__input">
+                </div>
+                <div class="CIC-form__date-input">
+                  <label for="date-success-month" class="CIC-form__label CIC-form__label--small">Month</label>
+                  <input type="text" maxlength="2" id="date-success-month" name="date-success-month" autocomplete="bday-month" class="CIC-form__input">
+                </div>
+                <div class="CIC-form__date-input CIC-form__date-input--large">
+                  <label for="date-success-year" class="CIC-form__label CIC-form__label--small">Year</label>
+                  <input type="text" maxlength="4" id="date-success-year" name="date-success-year" autocomplete="bday-year" class="CIC-form__input">
+                </div>
+              </div>
+            </fieldset>
+            
+            <span id="date-success-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+          </div>
+        </div>
+        
+      </main>
+      <div class="CIC-layout__sidebar CIC-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+<section class="CIC-section CIC-section--brand-dark CIC-section--invert">
+  <div class="CIC-container CIC-p-y-sm">
+    <div class="CIC-layout">
+      <main class="CIC-layout__main">
+        
+        <div class="CIC-form">
+          <div class="CIC-form__group">
+            <fieldset class="CIC-form__date">
+              <legend>
+                <span class="CIC-form__label">Date of birth</span>
+                <span id="date-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+              </legend>
+              <div class="CIC-form__date-wrapper">
+                <div class="CIC-form__date-input">
+                  <label for="date-day" class="CIC-form__label CIC-form__label--small">Day</label>
+                  <input type="text" maxlength="2" id="date-day" name="date-day" autocomplete="bday-day" class="CIC-form__input">
+                </div>
+                <div class="CIC-form__date-input">
+                  <label for="date-month" class="CIC-form__label CIC-form__label--small">Month</label>
+                  <input type="text" maxlength="2" id="date-month" name="date-month" autocomplete="bday-month" class="CIC-form__input">
+                </div>
+                <div class="CIC-form__date-input CIC-form__date-input--large">
+                  <label for="date-year" class="CIC-form__label CIC-form__label--small">Year</label>
+                  <input type="text" maxlength="4" id="date-year" name="date-year" autocomplete="bday-year" class="CIC-form__input">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        
+        <div class="CIC-form">
+          <div class="CIC-form__group">
+            <fieldset class="CIC-form__date">
+              <legend>
+                <span class="CIC-form__label CIC-form__required">Date of birth<span class="sr-only"> (required)</span></span>
+                <span id="date-error-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+              </legend>
+              <div class="CIC-form__date-wrapper">
+                <div class="CIC-form__date-input">
+                  <label for="date-error-day" class="CIC-form__label CIC-form__label--small">Day</label>
+                  <input type="text" maxlength="2" id="date-error-day" name="date-error-day" autocomplete="bday-day" class="CIC-form__input" aria-invalid="true">
+                </div>
+                <div class="CIC-form__date-input">
+                  <label for="date-error-month" class="CIC-form__label CIC-form__label--small">Month</label>
+                  <input type="text" maxlength="2" id="date-error-month" name="date-error-month" autocomplete="bday-month" class="CIC-form__input" aria-invalid="true">
+                </div>
+                <div class="CIC-form__date-input CIC-form__date-input--large">
+                  <label for="date-error-year" class="CIC-form__label CIC-form__label--small">Year</label>
+                  <input type="text" maxlength="4" id="date-error-year" name="date-error-year" autocomplete="bday-year" class="CIC-form__input" aria-invalid="true">
+                </div>
+              </div>
+            </fieldset>
+            <span id="date-error-error-text" class="CIC-form__helper CIC-form__helper--error"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span>This field is required</span>
+          </div>
+        </div>
+        
+        <div class="CIC-form">
+          <div class="CIC-form__group">
+            <fieldset class="CIC-form__date">
+              <legend>
+                <span class="CIC-form__label">Date of birth</span>
+                <span id="date-success-helper-text" class="CIC-form__helper">For example 08 12 1990</span>
+              </legend>
+              <div class="CIC-form__date-wrapper">
+                <div class="CIC-form__date-input">
+                  <label for="date-success-day" class="CIC-form__label CIC-form__label--small">Day</label>
+                  <input type="text" maxlength="2" id="date-success-day" name="date-success-day" autocomplete="bday-day" class="CIC-form__input">
+                </div>
+                <div class="CIC-form__date-input">
+                  <label for="date-success-month" class="CIC-form__label CIC-form__label--small">Month</label>
+                  <input type="text" maxlength="2" id="date-success-month" name="date-success-month" autocomplete="bday-month" class="CIC-form__input">
+                </div>
+                <div class="CIC-form__date-input CIC-form__date-input--large">
+                  <label for="date-success-year" class="CIC-form__label CIC-form__label--small">Year</label>
+                  <input type="text" maxlength="4" id="date-success-year" name="date-success-year" autocomplete="bday-year" class="CIC-form__input">
+                </div>
+              </div>
+            </fieldset>
+            
+            <span id="date-success-valid-text" class="CIC-form__helper CIC-form__helper--valid"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span>This field has been validated</span>
+          </div>
+        </div>
+        
+      </main>
+      <div class="CIC-layout__sidebar CIC-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+</body>
+</html>

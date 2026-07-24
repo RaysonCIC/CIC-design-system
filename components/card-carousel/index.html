@@ -1,0 +1,1633 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Card carousel | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--wide">
+      <div class="CIC-docs__intro CIC-docs__intro--tabs">
+        <div class="CIC-docs__container">
+          <h1>Card carousel</h1>
+          
+          <p class="CIC-intro">A card carousel displays multiple related cards horizontally, allowing users to swipe or navigate through the content.</p>
+          
+        </div>
+      </div>
+<div class="CIC-docs__tabs">
+  <div class="CIC-tabs js-tabs CIC-docs-tabs">
+    <ul class="CIC-tabs__list">
+      <li class="CIC-tabs__list-item">
+        <a href="#section-guidance" class="CIC-tabs__link js-tabs-fixed">Guidance</a>
+      </li>
+      <li class="CIC-tabs__list-item">
+        <a href="#section-interactive-demo" class="CIC-tabs__link js-tabs-fixed">Demo &amp; Code</a>
+      </li>
+    </ul>
+    <section id="section-guidance" class="CIC-tabs__content">
+      <div class="CIC-docs__container">
+        
+<h2>Usage</h2>
+
+<p>The card carousel component displays four or more related cards within a limited space, allowing users to scroll through them via arrows, navigation buttons, or swiping gestures on a touchscreen.</p>
+
+<p>Use a card carousel component:</p>
+
+<ul>
+  <li>when you have limited screen space but need to display multiple cards with related content.</li>
+  <li>with a clear and relevant title, to help users understand the content or purpose better.</li>
+  <li>to display feature articles, blog posts, news updates or any sequential content, allowing users to browse through the latest updates easily.</li>
+</ul>
+
+<h3>When to avoid</h3>
+
+<p>It's essential to implement card carousels thoughtfully to ensure they genuinely enhance user experience.</p>
+
+<p>Do not:</p>
+
+<ul>
+  <li>use multiple card carousels on one page. Use carousels sparingly and strategically. Overuse can lead to user frustration.</li>
+  <li>use for unrelated items. The content in the carousel should be related in some way. This helps users to find related and relevant content.</li>
+  <li>mix different types of cards. Consistency helps users anticipate the content and interactions.</li>
+  <li>overwhelm users with too many cards in the carousel. Ideally, limit the number of cards to no more than 9 to prevent information overload.</li>
+  <li>use if your cards contain important information, as users may overlook it if they do not engage with the carousel.</li>
+</ul>
+
+<p>Ensure that the content displayed in the carousel is relevant, engaging, and adds value to the user experience.</p>
+
+<h3>How this component works</h3>
+
+<h4>Options</h4>
+<p>You can edit the following data attributes to customize the carousel behaviour:</p>
+<ul>
+<li><strong>drag</strong>: to disable drag on touch devices, add a <code>data-drag="off"</code> to the <code>js-carousel</code> element (default is on);</li>
+<li><strong>infinite loop</strong>: to enable infinite loop, add a <code>data-loop="on"</code> to the <code>js-carousel</code> element (default is off);</li>
+<li><strong>carousel navigation</strong>: to disable the carousel dots navigation, add a <code>data-navigation="off"</code> (default is on); this option is only available when not using <code>data-loop="on"</code>.</li>
+</ul>
+
+<h4>Carousel Item Number</h4>
+
+<p>The number of items visible in a carousel cycle is determined based on the width of the <code>.CIC-carousel__item</code> as defined in the card-carousel.scss file. To modify this value, you can change the <code>--carousel-item-auto-size</code> CSS variable (default is 300px).</p>
+
+<h4>Carousel Dots Navigation</h4>
+
+<p>You can customize the carousel navigation using the following data attributes:</p>
+<ul>
+  <li><code>data-navigation-class</code>: pass a list of custom classes to be added to the navigation element (default is <code>CIC-carousel__navigation</code>);</li>
+  <li><code>data-navigation-item-class</code>: pass a custom class for the navigation list items (default is <code>CIC-carousel__nav-item</code>). When an item is selected, the class <code>{navigation-item-class}--selected</code> is added to that element (e.g., if <code>data-navigation-item-class='CIC-carousel__navigation-item'</code>, the selected class will be <code>CIC-carousel__navigation-item--selected</code>);</li>
+  <li><code>data-navigation-pagination</code>: set it to 'on' to use the carousel navigation as a pagination element.</li>
+</ul>
+
+<h4>Center Items</h4>
+
+<p>If the carousel items number is smaller than the number of visible items, and you want them to be centered in the viewport, add a <code>data-justify-content="on"</code> to the <code>.CIC-carousel</code> item. By default items will be aligned to the left.</p>
+
+<h4>Optional title</h4>
+
+<p>You can include a heading using an <code>&lt;h2&gt;</code> within a separate title container alongside the carousel navigation. Only <code>&lt;h2&gt;</code> is supported. When present, this heading will align to the left and the carousel navigation controls will be pushed to the right. This provides a clear label for the carousel content and improves accessibility.</p>
+
+<p>The title is optional. If no heading is provided, the navigation controls remain grouped on the right.</p>
+
+<h4>Optional 'view more' link</h4>
+
+<p>Including a 'view more' link below the card carousel can be useful for guiding users to additional related content beyond what is displayed in the carousel.</p>
+
+<p>Research shows that users often look for clear pathways to explore more information, especially when the carousel content is a subset of a larger collection. A well-placed 'view more' link can improve user engagement by providing a straightforward way to access further resources.</p>
+
+<p>Use a 'view more' link when:</p>
+<ul>
+  <li>there is a larger set of related content not fully displayed in the carousel;</li>
+  <li>you want to encourage users to explore more deeply on a related topic or category;</li>
+  <li>you have a dedicated landing page or section that expands on the carousel content.</li>
+</ul>
+
+<p>Avoid using a 'view more' link if:</p>
+<ul>
+  <li>the carousel already shows the full set of items and there is no additional content beyond what's displayed;</li>
+  <li>the link would lead to unrelated or confusing destinations.</li>
+</ul>
+
+<h5>Link text guidelines</h5>
+
+<ul>
+  <li>Use clear and descriptive link text that indicates what users will find by clicking.</li>
+  <li>Avoid generic phrases like 'click here' or 'more' without context.</li>
+  <li>Examples of good link text include 'View all articles on [topic]', 'See more news updates', or 'Explore related blog posts.'</li>
+  <li>Keep link text concise but meaningful to assist screen reader users and improve accessibility.</li>
+</ul>
+
+<h2>Accessibility</h2>
+<p>All components are responsive and designed to comply with WCAG 2.2 AA accessibility standards. Full compliance depends on using and configuring the components correctly.</p>
+
+<p>The card carousel conforms to the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/carousel" title="WAI-ARIA Authoring Practices: Carousel pattern" rel="noopener noreferrer">WAI-ARIA Authoring Practices: Carousel pattern</a> and includes a <a href="https://www.w3.org/TR/wai-aria-1.2/#dfn-live-region" title="WAI-ARIA 1.2 specification: Live region definition" rel="noopener noreferrer">WAI-ARIA 1.2: Live region definition</a> that allows screen readers to read content whenever carousel slides change.</p>
+
+<h3>Keyboard Interactions and focus</h3>
+
+<ul>
+  <li><code>Tab</code> key moves focus through interactive elements in the carousel. Rotation control, previous slide, and next slide buttons precede the slide content in the <code>Tab</code> sequence.</li>
+  <li><code>Shift + Tab</code> keys moves focus to the previous focusable element</li>
+  <li><code>Enter</code> , <code>Left Arrow</code> and <code>Right Arrow</code> keys display next or previous slide in the carousel.</li>
+</ul>
+
+<h3>Screen Reader Announcement of Slide Changes</h3>
+<p>The card carousel slide content is included in a live region. This makes it easier for screen reader users to scan through the carousel slides. When screen reader users activate the next or previous slide button, the new slide content is announced, giving users immediate feedback that helps them determine whether or not to interact with the content.</p>
+
+<h3>ARIA attributes</h3>
+<ul>
+  <li>The card carousel container has the role property set to <a href="https://w3c.github.io/aria/#group" title="ARIA role: group" rel="noopener noreferrer">ARIA role: group</a> with the property <code>aria-roledescription</code> set to 'carousel'.</li>
+  <li>Each card container has role <a href="https://w3c.github.io/aria/#group" title="ARIA role: group" rel="noopener noreferrer">ARIA role: group</a> with the property <code>aria-roledescription</code> set to slide.</li>
+  <li>The next slide control, and previous slide control are native button elements.</li>
+</ul>
+
+      </div>
+    </section>
+    <section id="section-interactive-demo" class="CIC-tabs__content">
+      <div class="CIC-docs__demo">
+        <div class="CIC-docs__external">
+          <div class="CIC-list CIC-list--8">
+            <a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/card-carousel/blank.html"><span>View in new window</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a><a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/card-carousel/theme.html"><span>View theming example</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a>
+          </div>
+        </div>
+
+<div class="CIC-in-page-alert CIC-in-page-alert--info">
+   <div class="CIC-in-page-alert__content">
+    <p>The card carousel component is best viewed in new window.</p>
+  </div>
+</div>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-carousel js-carousel" data-description="Highlighted latest news" data-drag="on">
+      <p class="sr-only">Carousel items</p>
+      <div class="CIC-carousel__wrapper js-carousel__wrapper">
+        <ol class="CIC-carousel__list">
+          <li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/292/400/200" alt="1. Nominations open for Green Globe Awards 2019">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">1. Nominations open for Green Globe Awards 2019</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/28/400/200" alt="2. Quality green spaces and a million more trees for CIC">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">2. Quality green spaces and a million more trees for CIC</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/268/400/200" alt="3. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">3. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/222/400/200" alt="4. Nominations open for Green Globe Awards 2019">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">4. Nominations open for Green Globe Awards 2019</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/238/400/200" alt="5. Quality green spaces and a million more trees for CIC">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">5. Quality green spaces and a million more trees for CIC</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li>
+        </ol>
+      </div>
+          <div class="CIC-carousel__header">
+            <div class="CIC-carousel__title">
+              <h2>Latest news</h2>
+            </div>
+            <nav aria-label="Carousel controls">
+              <ul>
+                <li>
+                  <button aria-label="Show previous items" class="CIC-carousel__control CIC-carousel__control--prev js-carousel__control">
+                    <svg class="CIC-icon" viewBox="0 0 20 20">
+                      <title>Show previous items</title>
+                      <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="Show next items" class="CIC-carousel__control CIC-carousel__control--next js-carousel__control">
+                    <svg class="CIC-icon" viewBox="0 0 20 20">
+                      <title>Show next items</title>
+                      <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-carousel js-carousel" data-description="Highlighted latest news" data-drag="on">
+  <p class="sr-only">Carousel items</p>
+  <div class="CIC-carousel__wrapper js-carousel__wrapper">
+    <ol class="CIC-carousel__list">
+      <li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/292/400/200" alt="1. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">1. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/28/400/200" alt="2. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">2. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/268/400/200" alt="3. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">3. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/222/400/200" alt="4. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">4. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="5. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">5. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li>
+    </ol>
+  </div>
+      <div class="CIC-carousel__header">
+        <div class="CIC-carousel__title">
+          <h2>Latest news</h2>
+        </div>
+        <nav aria-label="Carousel controls">
+          <ul>
+            <li>
+              <button aria-label="Show previous items" class="CIC-carousel__control CIC-carousel__control--prev js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show previous items</title>
+                  <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button aria-label="Show next items" class="CIC-carousel__control CIC-carousel__control--next js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show next items</title>
+                  <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-carousel js-carousel" data-description="Highlighted latest news" data-drag="on">
+  <p class="sr-only">Carousel items</p>
+  <div class="CIC-carousel__wrapper js-carousel__wrapper">
+    <ol class="CIC-carousel__list">
+      <li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/292/400/200" alt="1. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">1. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/28/400/200" alt="2. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">2. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/268/400/200" alt="3. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">3. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/222/400/200" alt="4. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">4. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="5. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">5. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li>
+    </ol>
+  </div>
+      <div class="CIC-carousel__header">
+        <div class="CIC-carousel__title">
+          <h2>Latest news</h2>
+        </div>
+        <nav aria-label="Carousel controls">
+          <ul>
+            <li>
+              <button aria-label="Show previous items" class="CIC-carousel__control CIC-carousel__control--prev js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show previous items</title>
+                  <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button aria-label="Show next items" class="CIC-carousel__control CIC-carousel__control--next js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show next items</title>
+                  <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3>Pagination</h3>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-carousel js-carousel" data-description="Highlighted latest news" data-navigation-pagination="on">
+      <p class="sr-only">Carousel items</p>
+      <div class="CIC-carousel__wrapper js-carousel__wrapper">
+        <ol class="CIC-carousel__list">
+          <li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/292/400/200" alt="1. Nominations open for Green Globe Awards 2019">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">1. Nominations open for Green Globe Awards 2019</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/28/400/200" alt="2. Quality green spaces and a million more trees for CIC">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">2. Quality green spaces and a million more trees for CIC</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/268/400/200" alt="3. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">3. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/222/400/200" alt="4. Nominations open for Green Globe Awards 2019">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">4. Nominations open for Green Globe Awards 2019</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/238/400/200" alt="5. Quality green spaces and a million more trees for CIC">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">5. Quality green spaces and a million more trees for CIC</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/208/400/200" alt="6. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">6. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/282/400/200" alt="7. Nominations open for Green Globe Awards 2019">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">7. Nominations open for Green Globe Awards 2019</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/287/400/200" alt="8. Quality green spaces and a million more trees for CIC">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">8. Quality green spaces and a million more trees for CIC</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/238/400/200" alt="9. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">9. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li>
+        </ol>
+      </div>
+          <div class="CIC-carousel__header">
+            <div class="CIC-carousel__title">
+              <h2>Latest news</h2>
+            </div>
+            <nav aria-label="Carousel controls">
+              <ul>
+                <li>
+                  <button aria-label="Show previous items" class="CIC-carousel__control CIC-carousel__control--prev js-carousel__control">
+                    <svg class="CIC-icon" viewBox="0 0 20 20">
+                      <title>Show previous items</title>
+                      <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="Show next items" class="CIC-carousel__control CIC-carousel__control--next js-carousel__control">
+                    <svg class="CIC-icon" viewBox="0 0 20 20">
+                      <title>Show next items</title>
+                      <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-carousel js-carousel" data-description="Highlighted latest news" data-navigation-pagination="on">
+  <p class="sr-only">Carousel items</p>
+  <div class="CIC-carousel__wrapper js-carousel__wrapper">
+    <ol class="CIC-carousel__list">
+      <li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/292/400/200" alt="1. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">1. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/28/400/200" alt="2. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">2. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/268/400/200" alt="3. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">3. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/222/400/200" alt="4. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">4. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="5. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">5. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/208/400/200" alt="6. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">6. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/282/400/200" alt="7. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">7. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/287/400/200" alt="8. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">8. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="9. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">9. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li>
+    </ol>
+  </div>
+      <div class="CIC-carousel__header">
+        <div class="CIC-carousel__title">
+          <h2>Latest news</h2>
+        </div>
+        <nav aria-label="Carousel controls">
+          <ul>
+            <li>
+              <button aria-label="Show previous items" class="CIC-carousel__control CIC-carousel__control--prev js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show previous items</title>
+                  <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button aria-label="Show next items" class="CIC-carousel__control CIC-carousel__control--next js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show next items</title>
+                  <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-carousel js-carousel" data-description="Highlighted latest news" data-navigation-pagination="on">
+  <p class="sr-only">Carousel items</p>
+  <div class="CIC-carousel__wrapper js-carousel__wrapper">
+    <ol class="CIC-carousel__list">
+      <li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/292/400/200" alt="1. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">1. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/28/400/200" alt="2. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">2. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/268/400/200" alt="3. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">3. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/222/400/200" alt="4. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">4. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="5. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">5. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/208/400/200" alt="6. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">6. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/282/400/200" alt="7. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">7. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/287/400/200" alt="8. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">8. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="9. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">9. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li>
+    </ol>
+  </div>
+      <div class="CIC-carousel__header">
+        <div class="CIC-carousel__title">
+          <h2>Latest news</h2>
+        </div>
+        <nav aria-label="Carousel controls">
+          <ul>
+            <li>
+              <button aria-label="Show previous items" class="CIC-carousel__control CIC-carousel__control--prev js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show previous items</title>
+                  <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button aria-label="Show next items" class="CIC-carousel__control CIC-carousel__control--next js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show next items</title>
+                  <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3>View more </h3>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-carousel js-carousel" data-description="Highlighted latest news" data-navigation-pagination="on">
+      <p class="sr-only">Carousel items</p>
+      <div class="CIC-carousel__wrapper js-carousel__wrapper">
+        <ol class="CIC-carousel__list">
+          <li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/292/400/200" alt="1. Nominations open for Green Globe Awards 2019">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">1. Nominations open for Green Globe Awards 2019</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/28/400/200" alt="2. Quality green spaces and a million more trees for CIC">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">2. Quality green spaces and a million more trees for CIC</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/268/400/200" alt="3. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">3. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/222/400/200" alt="4. Nominations open for Green Globe Awards 2019">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">4. Nominations open for Green Globe Awards 2019</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/238/400/200" alt="5. Quality green spaces and a million more trees for CIC">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">5. Quality green spaces and a million more trees for CIC</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/208/400/200" alt="6. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">6. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/282/400/200" alt="7. Nominations open for Green Globe Awards 2019">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">7. Nominations open for Green Globe Awards 2019</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/287/400/200" alt="8. Quality green spaces and a million more trees for CIC">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">8. Quality green spaces and a million more trees for CIC</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li><li class="CIC-carousel__item">
+          <div class="CIC-card">
+            <div class="CIC-card__image">
+              <img src="https://picsum.photos/id/238/400/200" alt="9. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+            </div>
+            <div class="CIC-card__content">
+              <div class="CIC-card__title">
+                <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">9. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+              </div>
+              <div class="CIC-card__copy">
+                <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+              </div>
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+            </div>
+          </div>
+          </li>
+        </ol>
+      </div>
+          <div class="CIC-carousel__header">
+            <div class="CIC-carousel__title">
+              <h2>Latest news</h2>
+            </div>
+            <nav aria-label="Carousel controls">
+              <ul>
+                <li>
+                  <button aria-label="Show previous items" class="CIC-carousel__control CIC-carousel__control--prev js-carousel__control">
+                    <svg class="CIC-icon" viewBox="0 0 20 20">
+                      <title>Show previous items</title>
+                      <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="Show next items" class="CIC-carousel__control CIC-carousel__control--next js-carousel__control">
+                    <svg class="CIC-icon" viewBox="0 0 20 20">
+                      <title>Show next items</title>
+                      <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      
+    </div>
+    <a class="CIC-carousel--view-more" href="https://github.com/digitalCIC/CIC-design-system" target="_blank" rel="noopener">
+      <span>View more</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+    </a>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-carousel js-carousel" data-description="Highlighted latest news" data-navigation-pagination="on">
+  <p class="sr-only">Carousel items</p>
+  <div class="CIC-carousel__wrapper js-carousel__wrapper">
+    <ol class="CIC-carousel__list">
+      <li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/292/400/200" alt="1. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">1. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/28/400/200" alt="2. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">2. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/268/400/200" alt="3. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">3. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/222/400/200" alt="4. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">4. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="5. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">5. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/208/400/200" alt="6. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">6. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/282/400/200" alt="7. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">7. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/287/400/200" alt="8. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">8. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="9. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">9. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li>
+    </ol>
+  </div>
+      <div class="CIC-carousel__header">
+        <div class="CIC-carousel__title">
+          <h2>Latest news</h2>
+        </div>
+        <nav aria-label="Carousel controls">
+          <ul>
+            <li>
+              <button aria-label="Show previous items" class="CIC-carousel__control CIC-carousel__control--prev js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show previous items</title>
+                  <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button aria-label="Show next items" class="CIC-carousel__control CIC-carousel__control--next js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show next items</title>
+                  <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+</div>
+<a class="CIC-carousel--view-more" href="https://github.com/digitalCIC/CIC-design-system" target="_blank" rel="noopener">
+  <span>View more</span>
+  <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+</a>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-carousel js-carousel" data-description="Highlighted latest news" data-navigation-pagination="on">
+  <p class="sr-only">Carousel items</p>
+  <div class="CIC-carousel__wrapper js-carousel__wrapper">
+    <ol class="CIC-carousel__list">
+      <li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/292/400/200" alt="1. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">1. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/28/400/200" alt="2. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">2. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/268/400/200" alt="3. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">3. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/222/400/200" alt="4. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">4. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="5. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">5. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/208/400/200" alt="6. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">6. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/282/400/200" alt="7. Nominations open for Green Globe Awards 2019">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">7. Nominations open for Green Globe Awards 2019</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across CIC.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/287/400/200" alt="8. Quality green spaces and a million more trees for CIC">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">8. Quality green spaces and a million more trees for CIC</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li><li class="CIC-carousel__item">
+      <div class="CIC-card">
+        <div class="CIC-card__image">
+          <img src="https://picsum.photos/id/238/400/200" alt="9. New Premier&#x27;s Priority to lift literacy and numeracy standards">
+        </div>
+        <div class="CIC-card__content">
+          <div class="CIC-card__title">
+            <a href="https://www.digital.Brand.https://cicinsurancegroup.com/">9. New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+          </div>
+          <div class="CIC-card__copy">
+            <p>The CIC Insurance will redouble its efforts to lift literacy and numeracy standards across CIC public schools to ensure students are given every opportunity to be their best.</p>
+          </div>
+          <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+        </div>
+      </div>
+      </li>
+    </ol>
+  </div>
+      <div class="CIC-carousel__header">
+        <div class="CIC-carousel__title">
+          <h2>Latest news</h2>
+        </div>
+        <nav aria-label="Carousel controls">
+          <ul>
+            <li>
+              <button aria-label="Show previous items" class="CIC-carousel__control CIC-carousel__control--prev js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show previous items</title>
+                  <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button aria-label="Show next items" class="CIC-carousel__control CIC-carousel__control--next js-carousel__control">
+                <svg class="CIC-icon" viewBox="0 0 20 20">
+                  <title>Show next items</title>
+                  <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="square" stroke-width="2" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+</div>
+<a class="CIC-carousel--view-more" href="https://github.com/digitalCIC/CIC-design-system" target="_blank" rel="noopener">
+  <span>View more</span>
+  <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+</a>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+  </div>
+</div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

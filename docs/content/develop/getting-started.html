@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Getting Started | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="How you use the CIC Design System depends on your team&#x27;s capabilities. We recommend using npm but also provided in a CDN, and a downloadable starter kit which includes all the compiled assets." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--narrow">
+      <div class="CIC-docs__intro">
+        <div class="CIC-docs__container">
+          <h1>Getting Started</h1>
+          
+          
+          
+        </div>
+      </div>
+      <div class="CIC-docs__content">
+        <div class="CIC-docs__container">
+
+<h2>Using the design system</h2>
+<p>How you use the CIC Design System depends on your team's capabilities. We recommend using npm but also provided in a CDN, and a downloadable starter kit which includes all the compiled assets.</p>
+
+
+<nav class="CIC-in-page-nav" aria-labelledby="in-page-nav">
+  <div id="in-page-nav" class="CIC-in-page-nav__title">On this page</div>
+  <ul class="CIC-in-page-nav__list">
+    <li>
+      <a href="#npm">Installing with NPM</a>
+    </li>
+    <li>
+      <a href="#style">Import styles</a>
+    </li>
+    <li>
+      <a href="#tools-barrel">Using the Tools barrel</a>
+    </li>
+    <li>
+      <a href="#fonticon">Adding the font and icons</a>
+    </li>
+    <li>
+      <a href="#javascript">Importing javascript into your project</a>
+    </li>
+    <li>
+      <a href="#cdn">Using JSDelivr CDN</a>
+    </li>
+    <li>
+      <a href="#starter-kit">Download starter kit</a>
+    </li>
+    <li>
+      <a href="#browser-support">Browser support</a>
+    </li>
+    <li>
+      <a href="#updates">Getting updates</a>
+    </li>
+  </ul>
+</nav>
+
+<h3 id="npm">Installing with NPM</h3>
+<ul>
+  <li>Install Node/npm. You can find more information how to install it <a target="_blank" href="https://nodejs.org/en/download/">Nodejs</a>.</li>
+  <li>Generate a <code>package.json</code> file using the <code>npm init</code> command in the terminal. You will be prompted to enter several pieces of information, like the name of your application, version, description etc.</li>
+  <li>
+    Add <code>CIC-design-system</code> to your project’s <code>package.json</code>:
+    <br><br>
+    <code>npm install --save CIC-design-system</code>
+  </li>
+</ul>
+<p>The CIC Design System is now installed as a dependancy of your project. Next, import <a href="#style">styles</a> and <a href="#javascript">javascript</a> in to your project build.</p>
+
+<h3 id="style">Importing styles</h3>
+<p>The CIC Design System styles can be imported as a whole package, or you can install core styles and add components selectively.</p>
+<h4>All styles</h4>
+<p>To import all styles as a single package you need to add following snippet at the start of your main SCSS file:</p>
+<div class="CIC-docs__example CIC-docs__example--hidden">
+  <div class="CIC-docs__component">
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`@import 'node_modules/CIC-design-system/src/main';
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="scss"><script>document.write((`@import 'node_modules/CIC-design-system/src/main';
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h4>Core and selected components</h4>
+<p>Our core library includes the design system's base theme, typography, mixins and helper functions. Once you imported it, you can take full advantage of our variables and helpers. To import core library you need to add following snippet at the start of your main SASS file:</p>
+<div class="CIC-docs__example CIC-docs__example--hidden">
+  <div class="CIC-docs__component">
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`// Core libraries
+@import 'node_modules/CIC-design-system/src/global/scss/settings/settings';
+@import 'node_modules/CIC-design-system/src/global/scss/base/all';
+@import 'node_modules/CIC-design-system/src/global/scss/helpers/all';
+@import 'node_modules/CIC-design-system/src/global/scss/settings/palette';
+@import 'node_modules/CIC-design-system/src/global/scss/settings/theme';
+@import 'node_modules/CIC-design-system/src/core/all';
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="scss"><script>document.write((`// Core libraries
+@import 'node_modules/CIC-design-system/src/global/scss/settings/settings';
+@import 'node_modules/CIC-design-system/src/global/scss/base/all';
+@import 'node_modules/CIC-design-system/src/global/scss/helpers/all';
+@import 'node_modules/CIC-design-system/src/global/scss/settings/palette';
+@import 'node_modules/CIC-design-system/src/global/scss/settings/theme';
+@import 'node_modules/CIC-design-system/src/core/all';
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<p>Once you have installed the core library you can start importing components as you need it. To import individual components you need to add following snippets to your main SASS file under core libraries import:</p>
+<div class="CIC-docs__example CIC-docs__example--hidden">
+  <div class="CIC-docs__component">
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`// Components
+@import 'node_modules/CIC-design-system/src/components/accordion/accordion';
+@import 'node_modules/CIC-design-system/src/components/card/card';
+@import 'node_modules/CIC-design-system/src/components/in-page-alert/in-page-alert';
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="scss"><script>document.write((`// Components
+@import 'node_modules/CIC-design-system/src/components/accordion/accordion';
+@import 'node_modules/CIC-design-system/src/components/card/card';
+@import 'node_modules/CIC-design-system/src/components/in-page-alert/in-page-alert';
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4 id="tools-barrel">Using the Tools barrel</h4>
+<p>The <code>tools</code> barrel gives you access to shared <strong>mixins</strong> and <strong>functions</strong> via a single, stable import path. It does <em>not</em> output CSS and it does <em>not</em> replace importing the core styles or any components you use. Keep importing <code>settings</code>, <code>base</code>, <code>helpers</code> and your chosen components as shown above; the <code>tools</code> barrel is purely Sass utilities for use inside your component styles.</p>
+<div class="CIC-docs__example CIC-docs__example--hidden">
+  <div class="CIC-docs__component">
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`@use 'CIC-design-system/tools' as CIC;
+
+.example {
+  margin: CIC.rem(16);
+
+  @include CIC.breakpoint('md') {
+    margin: CIC.rem(32);
+  }
+}
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="scss"><script>document.write((`@use 'CIC-design-system/tools' as CIC;
+
+.example {
+  margin: CIC.rem(16);
+
+  @include CIC.breakpoint('md') {
+    margin: CIC.rem(32);
+  }
+}
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<p><em>Performance note:</em> Importing the tools barrel does not add unused CSS. Mixins and functions only generate CSS when you call them, and the module is parsed once per build.</p>
+<p><strong>Tip:</strong> Prefer the barrel for consistency. If a file needs exactly one tool and you want explicit coupling, you can import that file directly (for example, <code>@use 'node_modules/CIC-design-system/src/global/scss/base/mixins' as mixins;</code>).</p>
+
+<h3 id="fonticon">Adding the fonts and the icons</h3>
+<p>In your main html document add this line of code inside the head tag. Make sure that it's placed before the CIC Design System styles import. Or install <a href="https://www.npmjs.com/package/material-icons" target="_blank">icon</a> and <a href="https://www.npmjs.com/package/@fontsource/public-sans" target="_blank">font</a> from npm.</p>
+<div class="CIC-docs__example CIC-docs__example--hidden">
+  <div class="CIC-docs__component">
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<link rel="stylesheet" href="/css/main.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<link rel="stylesheet" href="/css/main.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<p>Another way is to import it in css:</p>
+<div class="CIC-docs__example CIC-docs__example--hidden">
+  <div class="CIC-docs__component">
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`@import url("/css/main.css");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="scss"><script>document.write((`@import url("/css/main.css");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h3 id="javascript">Importing javascript into your project</h3>
+<p>Some CIC Design System components require javascript to provide advanced functionality. To ensure the page is ready for javascript to run, include the follow scripts tags at the end of the html document.</p>
+<div class="CIC-docs__example CIC-docs__example--hidden">
+  <div class="CIC-docs__component">
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`  ...
+  <script src="path/to/main.js"> <\/script>
+  <script>window.CIC.initSite()<\/script>
+</body>
+</html>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`  ...
+  <script src="path/to/main.js"> <\/script>
+  <script>window.CIC.initSite()<\/script>
+</body>
+</html>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<p>Depending on your project set up, you might wish to copy the file into your project from <code>node_modules</code> or add the reference to your build workflow.</p>
+
+<h3 id="cdn">Using JSDelivr CDN</h3>
+<p>You can add the files to your main html document</p>
+<div class="CIC-docs__example CIC-docs__example--hidden">
+  <div class="CIC-docs__component">
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<head>
+  ...
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/CIC-design-system@3/dist/css/main.css">
+</head>
+...
+  <script src="https://cdn.jsdelivr.net/npm/CIC-design-system@3/dist/js/main.min.js"><\/script>
+  <script>window.CIC.initSite()<\/script>
+</body>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<head>
+  ...
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/CIC-design-system@3/dist/css/main.css">
+</head>
+...
+  <script src="https://cdn.jsdelivr.net/npm/CIC-design-system@3/dist/js/main.min.js"><\/script>
+  <script>window.CIC.initSite()<\/script>
+</body>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h3 id="starter-kit">Download starter kit</h3>
+<p>You can download the compiled design system assets (HTML, CSS, JavaScript) in the <a href="https://github.com/digitalCIC/CIC-design-system/blob/master/HTMLstarterkit.zip">HTMLStarterkit zip file</a> from the latest release.</p>
+
+<h3 id="browser-support">Browser support</h3>
+<p>CIC Design System is supported in the following browsers:</p>
+<ul>
+  <li>Chrome (latest)</li>
+  <li>Safari (latest)</li>
+  <li>Microsoft Edge (latest)</li>
+  <li>Firefox (latest)</li>
+</ul>
+
+
+<h3 id="updates">Getting updates</h3>
+<p>To be notified when there’s a new release, you can either join the <a target="_blank" rel="noopener noreferrer" href="https://community.designsystem.Brand.https://cicinsurancegroup.com//">Design System community</a> or <a target="_blank" rel="noopener noreferrer" href="https://github.com/digitalCIC/CIC-design-system">watch the CIC Design System GitHub</a></p>
+
+        </div>
+      </div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

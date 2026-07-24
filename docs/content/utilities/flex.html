@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Flex | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="Utilities to manage the layout, alignment and sizing of flex items and components with a suite of responsive flexbox utilities." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--narrow">
+      <div class="CIC-docs__intro">
+        <div class="CIC-docs__container">
+          <h1>Flex</h1>
+          
+          <p class="CIC-intro">Utilities to manage the layout, alignment and sizing of flex items and components with a suite of responsive flexbox utilities.</p>
+          
+        </div>
+      </div>
+      <div class="CIC-docs__content">
+        <div class="CIC-docs__container">
+
+<h3 id="enable-flex-behaviours">Enable flex behaviours</h3>
+
+<p>Apply display utilities to create a flexbox container and transform direct children elements into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>
+<p><strong>Note:</strong> Grid rows (<code>CIC-row</code>) already set <code>display: flex</code>, so you do not need <code>CIC-display-flex</code> on them. In grid layouts, the <code>CIC-col</code> children are flex items, so these utilities (including <code>order</code>) apply to those columns.</p>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-display-flex CIC-p-xs CIC-bg--grey-04">I'm a flexbox container!</div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex CIC-p-xs CIC-bg--grey-04">I'm a flexbox container!</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex CIC-p-xs CIC-bg--grey-04">I'm a flexbox container!</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-display-inline-flex CIC-p-xs CIC-bg--grey-04">I'm an inline flexbox container!</div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-inline-flex CIC-p-xs CIC-bg--grey-04">I'm an inline flexbox container!</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-inline-flex CIC-p-xs CIC-bg--grey-04">I'm an inline flexbox container!</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h3 id="direction">Direction</h3>
+
+<p>Set the direction of flex items in a flex container with direction utilities.</p>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-display-flex CIC-flex-row CIC-m-bottom-xs CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 1</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 2</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 3</div>
+    </div>
+    <div class="CIC-display-flex CIC-flex-row-reverse CIC-m-bottom-xs CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 1</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 2</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 3</div>
+    </div>
+    <div class="CIC-display-flex CIC-flex-column CIC-m-bottom-xs CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 1</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 2</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 3</div>
+    </div>
+    <div class="CIC-display-flex CIC-flex-column-reverse CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 1</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 2</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 3</div>
+    </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex CIC-flex-row">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="CIC-display-flex CIC-flex-row-reverse">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="CIC-display-flex CIC-flex-column">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="CIC-display-flex CIC-flex-column-reverse">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex CIC-flex-row">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="CIC-display-flex CIC-flex-row-reverse">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="CIC-display-flex CIC-flex-column">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+<div class="CIC-display-flex CIC-flex-column-reverse">
+  <div>Flex item 1</div>
+  <div>Flex item 2</div>
+  <div>Flex item 3</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3 id="justify-content">Justify content</h3>
+
+<p>Use justify-content utilities on flexbox containers to change the alignment of flex items on the main axis. Choose from start (browser default), end, center, between, around, or evenly.
+
+</p>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-display-flex CIC-justify-content-start CIC-m-bottom-xs CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Justify</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Content</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Start</div>
+    </div>
+    <div class="CIC-display-flex CIC-justify-content-end CIC-m-bottom-xs CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Justify</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Content</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">End</div>
+    </div>
+    <div class="CIC-display-flex CIC-justify-content-center CIC-m-bottom-xs CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Justify</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Content</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Center</div>
+    </div>
+    <div class="CIC-display-flex CIC-justify-content-between CIC-m-bottom-xs CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Justify</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Content</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Between</div>
+    </div>
+    <div class="CIC-display-flex CIC-justify-content-around CIC-m-bottom-xs CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Justify</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Content</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Around</div>
+    </div>
+    <div class="CIC-display-flex CIC-justify-content-evenly CIC-bg--grey-04">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Justify</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Content</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Evenly</div>
+    </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex CIC-justify-content-start">...</div>
+<div class="CIC-display-flex CIC-justify-content-end">...</div>
+<div class="CIC-display-flex CIC-justify-content-center">...</div>
+<div class="CIC-display-flex CIC-justify-content-between">...</div>
+<div class="CIC-display-flex CIC-justify-content-around">...</div>
+<div class="CIC-display-flex CIC-justify-content-evenly">...</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex CIC-justify-content-start">...</div>
+<div class="CIC-display-flex CIC-justify-content-end">...</div>
+<div class="CIC-display-flex CIC-justify-content-center">...</div>
+<div class="CIC-display-flex CIC-justify-content-between">...</div>
+<div class="CIC-display-flex CIC-justify-content-around">...</div>
+<div class="CIC-display-flex CIC-justify-content-evenly">...</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3 id="align-items">Align items</h3>
+
+<p>Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis. Choose from start, end, center, baseline, or stretch (browser default).</p>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-display-flex CIC-align-items-start CIC-m-bottom-xs CIC-bg--grey-04" style="height: 100px">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+    </div>
+    <div class="CIC-display-flex CIC-align-items-end CIC-m-bottom-xs CIC-bg--grey-04" style="height: 100px">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+    </div>
+    <div class="CIC-display-flex CIC-align-items-center CIC-m-bottom-xs CIC-bg--grey-04" style="height: 100px">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+    </div>
+    <div class="CIC-display-flex CIC-align-items-baseline CIC-m-bottom-xs CIC-bg--grey-04" style="height: 100px">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+    </div>
+    <div class="CIC-display-flex CIC-align-items-stretch CIC-bg--grey-04" style="height: 100px">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+    </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex CIC-align-items-start">...</div>
+<div class="CIC-display-flex CIC-align-items-end">...</div>
+<div class="CIC-display-flex CIC-align-items-center">...</div>
+<div class="CIC-display-flex CIC-align-items-baseline">...</div>
+<div class="CIC-display-flex CIC-align-items-stretch">...</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex CIC-align-items-start">...</div>
+<div class="CIC-display-flex CIC-align-items-end">...</div>
+<div class="CIC-display-flex CIC-align-items-center">...</div>
+<div class="CIC-display-flex CIC-align-items-baseline">...</div>
+<div class="CIC-display-flex CIC-align-items-stretch">...</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3 id="align-self">Align self</h3>
+
+<p>Use align-self utilities on flexbox items to individually change their alignment on the cross axis. Choose from the same options as align-items: start, end, center, baseline, or stretch (browser default).</p>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+      <div class="CIC-display-flex CIC-m-bottom-xs CIC-bg--grey-04" style="height: 100px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-align-self-start CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Aligned flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+      <div class="CIC-display-flex CIC-m-bottom-xs CIC-bg--grey-04" style="height: 100px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-align-self-end CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Aligned flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+      <div class="CIC-display-flex CIC-m-bottom-xs CIC-bg--grey-04" style="height: 100px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-align-self-center CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Aligned flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+      <div class="CIC-display-flex CIC-m-bottom-xs CIC-bg--grey-04" style="height: 100px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-align-self-baseline CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Aligned flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+      <div class="CIC-display-flex CIC-bg--grey-04" style="height: 100px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-align-self-stretch CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Aligned flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-align-self-start">Aligned flex item</div>
+<div class="CIC-align-self-end">Aligned flex item</div>
+<div class="CIC-align-self-center">Aligned flex item</div>
+<div class="CIC-align-self-baseline">Aligned flex item</div>
+<div class="CIC-align-self-stretch">Aligned flex item</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-align-self-start">Aligned flex item</div>
+<div class="CIC-align-self-end">Aligned flex item</div>
+<div class="CIC-align-self-center">Aligned flex item</div>
+<div class="CIC-align-self-baseline">Aligned flex item</div>
+<div class="CIC-align-self-stretch">Aligned flex item</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3 id="fill">Fill</h3>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-display-flex">
+      <div class="CIC-flex-fill CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item with a lot of content</div>
+      <div class="CIC-flex-fill CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-flex-fill CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+    </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex">
+  <div class="CIC-flex-fill">Flex item with a lot of content</div>
+  <div class="CIC-flex-fill">Flex item</div>
+  <div class="CIC-flex-fill">Flex item</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex">
+  <div class="CIC-flex-fill">Flex item with a lot of content</div>
+  <div class="CIC-flex-fill">Flex item</div>
+  <div class="CIC-flex-fill">Flex item</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3 id="grow-and-shrink">Grow and shrink</h3>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-display-flex">
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01 CIC-flex-grow-1">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Third flex item</div>
+    </div>
+    <div class="CIC-display-flex">
+      <div class="CIC-p-xs CIC-width-100 CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      <div class="CIC-p-xs CIC-flex-shrink-1 CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+    </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex">
+  <div class="CIC-flex-grow-1">Flex item</div>
+  <div>Flex item</div>
+  <div>Third flex item</div>
+</div>
+
+<div class="CIC-display-flex">
+  <div class="CIC-width-100">Flex item</div>
+  <div class="CIC-flex-shrink-1">Flex item</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex">
+  <div class="CIC-flex-grow-1">Flex item</div>
+  <div>Flex item</div>
+  <div>Third flex item</div>
+</div>
+
+<div class="CIC-display-flex">
+  <div class="CIC-width-100">Flex item</div>
+  <div class="CIC-flex-shrink-1">Flex item</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3 id="wrap">Wrap</h3>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    
+      <div class="CIC-display-flex CIC-flex-nowrap CIC-bg--grey-03 CIC-m-bottom-md" style="width: 8rem;">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01 CIC-bg-opacity--50">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01 CIC-bg-opacity--50">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01 CIC-bg-opacity--50">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01 CIC-bg-opacity--50">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01 CIC-bg-opacity--50">Flex item</div>
+      </div>
+    
+    
+      <div class="CIC-display-flex CIC-flex-wrap CIC-bg--grey-04 CIC-m-bottom-md">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 1</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 2</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 3</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 4</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 5</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 6</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 7</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 8</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 9</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 10</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 11</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 12</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 13</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 14</div>
+      </div>
+    
+    
+      <div class="CIC-display-flex CIC-flex-wrap-reverse CIC-bg--grey-04 CIC-m-bottom-md">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 1</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 2</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 3</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 4</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 5</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 6</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 7</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 8</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 9</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 10</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 11</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 12</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 13</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item 14</div>
+      </div>
+    
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex CIC-flex-nowrap">...</div>
+<div class="CIC-display-flex CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-flex-wrap-reverse">...</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex CIC-flex-nowrap">...</div>
+<div class="CIC-display-flex CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-flex-wrap-reverse">...</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h3 id="order">Order</h3>
+
+<p>Order utilities change the visual position of flex items without changing their position in the DOM.</p>
+ 
+<p>This means they affect what people see, but not the order that screen readers or keyboard users experience. For this reason, order utilities should only be used for layout presentation, not to change reading or interaction order.</p>
+
+<p>Maintain a meaningful DOM order first. When visual reordering is needed, apply order utilities at a breakpoint (for example <code>lg</code>) so the base mobile sequence remains logical and consistent. If the intended reading or focus order must change, update the HTML/DOM order instead of relying on order utilities.</p>
+
+<p>If you are unfamiliar with the difference between visual order and DOM order, see <a href="/core/layout/index.html#alternating-layouts">Alternating layouts</a>.</p>
+
+<h4 id="order-first-last-only">1. Using first/last order only (<code>CIC-order-lg-first</code>/<code>CIC-order-lg-last</code>)</h4>
+<p>This is the preferred approach for responsive alternating layouts. Keep the DOM in a logical reading sequence, then swap visual placement from a breakpoint.</p>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-display-flex CIC-flex-column">
+      <div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row CIC-m-bottom-sm">
+        <div class="CIC-order-lg-last CIC-width-lg-50 CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Image</div>
+        <div class="CIC-order-lg-first CIC-width-lg-50 CIC-p-xs CIC-bg--grey-04 CIC-border CIC-border--grey-01">Text</div>
+      </div>
+      <div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+        <div class="CIC-width-lg-50 CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Image</div>
+        <div class="CIC-width-lg-50 CIC-p-xs CIC-bg--grey-04 CIC-border CIC-border--grey-01">Text</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+  <div class="CIC-order-lg-last">Image</div>
+  <div class="CIC-order-lg-first">Text</div>
+</div>
+<div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+  <div>Image</div>
+  <div>Text</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+  <div class="CIC-order-lg-last">Image</div>
+  <div class="CIC-order-lg-first">Text</div>
+</div>
+<div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+  <div>Image</div>
+  <div>Text</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<h4 id="order-numeric-only">2. Using numeric order (<code>CIC-order-lg-1</code>/<code>CIC-order-lg-2</code>)</h4>
+<p>Numeric order utilities are an advanced option and are best reserved for constraints where DOM order cannot be changed. If used, prefer breakpoint-qualified classes so mobile keeps the default logical sequence.</p>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    <div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row CIC-m-bottom-sm">
+      <div class="CIC-order-lg-2 CIC-width-lg-50 CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Image</div>
+      <div class="CIC-order-lg-1 CIC-width-lg-50 CIC-p-xs CIC-bg--grey-04 CIC-border CIC-border--grey-01">Text</div>
+    </div>
+    <div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+      <div class="CIC-order-lg-1 CIC-width-lg-50 CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Image</div>
+      <div class="CIC-order-lg-2 CIC-width-lg-50 CIC-p-xs CIC-bg--grey-04 CIC-border CIC-border--grey-01">Text</div>
+    </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+  <div class="CIC-order-lg-2">Image</div>
+  <div class="CIC-order-lg-1">Text</div>
+</div>
+<div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+  <div>Image</div>
+  <div>Text</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+  <div class="CIC-order-lg-2">Image</div>
+  <div class="CIC-order-lg-1">Text</div>
+</div>
+<div class="CIC-display-flex CIC-flex-column CIC-flex-lg-row">
+  <div>Image</div>
+  <div>Text</div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+<div class="CIC-in-page-alert CIC-in-page-alert--warning">
+  <span class="material-icons CIC-material-icons CIC-in-page-alert__icon" focusable="false" aria-hidden="true">info</span>
+  <div class="CIC-in-page-alert__content">
+    <h4 id="use-order-with-care">Use <code>order</code> with care</h4>
+    <p>Order utilities only affect visual presentation. Screen readers and keyboard navigation still follow the DOM.</p>
+    <p>Only use <code>order</code> when items communicate the same, non-functional message, such as paired image and text content. Always keep the HTML order logical and meaningful for reading and focus, then apply <code>CIC-order-*</code> classes only as a visual enhancement where this does not change the intended sequence.</p>
+    <p>This guidance helps meet WCAG 2.2 SC <a href="https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html">1.3.2</a> (Meaningful Sequence) and <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html">2.4.3</a> (Focus Order). See <a href="/core/layout/index.html#alternating-layouts">Alternating layouts</a> for guidance.</p>
+  </div>
+</div>
+
+<h3 id="align-content">Align content</h3>
+
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+    
+      <div class="CIC-display-flex CIC-align-content-start CIC-flex-wrap CIC-m-bottom-md CIC-bg--grey-04" style="height: 200px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+    
+      <div class="CIC-display-flex CIC-align-content-end CIC-flex-wrap CIC-m-bottom-md CIC-bg--grey-04" style="height: 200px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+    
+      <div class="CIC-display-flex CIC-align-content-center CIC-flex-wrap CIC-m-bottom-md CIC-bg--grey-04" style="height: 200px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+    
+      <div class="CIC-display-flex CIC-align-content-between CIC-flex-wrap CIC-m-bottom-md CIC-bg--grey-04" style="height: 200px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+    
+      <div class="CIC-display-flex CIC-align-content-around CIC-flex-wrap CIC-m-bottom-md CIC-bg--grey-04" style="height: 200px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+    
+      <div class="CIC-display-flex CIC-align-content-stretch CIC-flex-wrap CIC-m-bottom-md CIC-bg--grey-04" style="height: 200px">
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+        <div class="CIC-p-xs CIC-bg--brand-light CIC-border CIC-border--grey-01">Flex item</div>
+      </div>
+  </div>
+</div>
+
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-display-flex align-content-start flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-end CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-center CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-between CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-around CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-stretch CIC-flex-wrap">...</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-display-flex align-content-start flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-end CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-center CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-between CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-around CIC-flex-wrap">...</div>
+<div class="CIC-display-flex CIC-align-content-stretch CIC-flex-wrap">...</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Side navigation | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="Enables users to move through levels of site hierarchy." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--menu">
+      <div class="CIC-docs__intro CIC-docs__intro--tabs">
+        <div class="CIC-docs__container">
+          <h1>Side navigation</h1>
+          
+          <p class="CIC-intro">Enables users to move through levels of site hierarchy.</p>
+          
+          <p>
+            <a class="CIC-link CIC-link--icon" target="_blank" href="https://www.figma.com/file/PVrERKnckLTlJSPk12gbtS/CIC-Digital-Design-System?node-id&#x3D;21298%3A25064">
+              <svg width="20" height="20" viewBox="0 0 33 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.003 48c4.416 0 8-3.584 8-8v-8h-8c-4.416 0-8 3.584-8 8s3.584 8 8 8z" fill="#0ACF83"></path><path d="M.003 24c0-4.416 3.584-8 8-8h8v16h-8c-4.416 0-8-3.584-8-8z" fill="#A259FF"></path><path d="M.003 8c0-4.416 3.584-8 8-8h8v16h-8c-4.416 0-8-3.584-8-8z" fill="#F24E1E"></path><path d="M16.003 0h8c4.416 0 8 3.584 8 8s-3.584 8-8 8h-8V0z" fill="#FF7262"></path><path d="M32.003 24c0 4.416-3.584 8-8 8s-8-3.584-8-8 3.584-8 8-8 8 3.584 8 8z" fill="#1ABCFE"></path></svg>
+              <span>Figma</span>
+            </a>
+          </p>
+        </div>
+      </div>
+<div class="CIC-docs__tabs">
+  <div class="CIC-tabs js-tabs CIC-docs-tabs">
+    <ul class="CIC-tabs__list">
+      <li class="CIC-tabs__list-item">
+        <a href="#section-guidance" class="CIC-tabs__link js-tabs-fixed">Guidance</a>
+      </li>
+      <li class="CIC-tabs__list-item">
+        <a href="#section-interactive-demo" class="CIC-tabs__link js-tabs-fixed">Demo &amp; Code</a>
+      </li>
+    </ul>
+    <section id="section-guidance" class="CIC-tabs__content">
+      <div class="CIC-docs__container">
+        
+<h2>Usage</h2>
+<p>Side navigation displays a users current position in the content hierarchy past the main nav, and enables them to move between sections and related content.</p>
+<p><strong>Single level navigation (sibling navigation)</strong></p>
+<p>Navigation that shows only the pages on the same level of content hierarchy. This allows the user to navigate horizontally. It is ideal for a stepped process, or a journey along a path.</p>
+<p><strong>Multiple level navigation</strong></p>
+<p>Displaying multiple levels so a user can navigate vertically through content hierarchy. When a parent section is selected it expands to display the children. Parent sections remain bolded while the current selection is indicated by the active background colour. </p>
+
+<h2>How this component works</h2>
+<p>Side navigation supports four levels of nesting along with an accompanying heading. For visual hierarchy, each level of nesting is indented.</p>
+
+<h3>Mobile behaviour and implementation</h3>
+<p>On mobile and smaller viewports, the side navigation component now includes an in-built mobile solution that allows the navigation to remain in its contextual location. Developers no longer need to manually integrate side nav into the main navigation structure (e.g. hamburger menu).</p>
+<p>For optimal user experience, it's recommended to label the mobile navigation toggle button with the current page title or section name to help users understand what content they're expanding.</p>
+
+<h3 id="mobile-implementation">Enabling mobile functionality in existing side nav setups</h3>
+<p>To enable mobile toggle functionality on existing side navs:</p>
+<ol>
+  <li class="CIC-m-bottom-sm">Add <code>js-side-nav</code> class to the parent <code>&lt;div&gt;</code> element containing the side navigation.</li>
+  <li class="CIC-m-bottom-md">Insert the toggle button as the first child inside the existing <code>.CIC-side-nav</code> element. Ensure the button label reflects the page title where the side navigation appears:
+<div class="CIC-docs-code">
+  <div class="CIC-docs-code__content active">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`&lt;button class="CIC-side-nav__toggle" aria-expanded="false"&gt;
+&lt;span&gt;[Page title]&lt;/span&gt;
+&lt;/button&gt;`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="true"><script>document.write((`&lt;button class="CIC-side-nav__toggle" aria-expanded="false"&gt;
+&lt;span&gt;[Page title]&lt;/span&gt;
+&lt;/button&gt;`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+</li>
+  <li class="CIC-m-bottom-sm">Add <code>CIC-side-nav__content</code> class to the main <code>&lt;ul&gt;</code> containing the navigation items.</li>
+  <li class="CIC-m-bottom-sm">Remove the <code>CIC-layout__sidebar--desktop</code> class from the parent <code>&lt;div&gt;</code> if you were previously using this method to hide the side navigation on desktop. If this class is not removed, the side nav may remain hidden at certain breakpoints, which can prevent the mobile toggle from appearing.</li>
+</ol>
+
+<h2>Accessibility</h2>
+<p>All components are responsive and designed to comply with WCAG 2.2 AA accessibility standards. Full compliance depends on using and configuring the components correctly.</p>
+
+
+      </div>
+    </section>
+    <section id="section-interactive-demo" class="CIC-tabs__content">
+      <div class="CIC-docs__demo">
+        <div class="CIC-docs__external">
+          <div class="CIC-list CIC-list--8">
+            <a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/side-nav/blank.html"><span>View in new window</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a><a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/side-nav/theme.html"><span>View theming example</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a>
+          </div>
+        </div>
+
+<h3>Single level</h3>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+    <nav class="CIC-side-nav js-side-nav" aria-labelledby="sksm726ns">
+      <button class="CIC-side-nav__toggle" aria-expanded="false">
+        <span>Agile Methodology</span>
+      </button>
+      <div class="CIC-side-nav__header" id="sksm726ns">
+        <a href="#">Agile Methodology</a>
+      </div>
+      <ul class="CIC-side-nav__content">
+        <li>
+          <a href="#">Pre-discovery</a>
+        </li>
+        <li>
+          <a href="#">Discovery</a>
+        </li>
+        <li class="active">
+          <a href="#" class="current" aria-current="page">Alpha</a>
+        </li>
+        <li>
+          <a href="#">Beta</a>
+        </li>
+        <li>
+          <a href="#">Live</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<nav class="CIC-side-nav js-side-nav" aria-labelledby="sksm726ns">
+  <button class="CIC-side-nav__toggle" aria-expanded="false">
+    <span>Agile Methodology</span>
+  </button>
+  <div class="CIC-side-nav__header" id="sksm726ns">
+    <a href="#">Agile Methodology</a>
+  </div>
+  <ul class="CIC-side-nav__content">
+    <li>
+      <a href="#">Pre-discovery</a>
+    </li>
+    <li>
+      <a href="#">Discovery</a>
+    </li>
+    <li class="active">
+      <a href="#" class="current" aria-current="page">Alpha</a>
+    </li>
+    <li>
+      <a href="#">Beta</a>
+    </li>
+    <li>
+      <a href="#">Live</a>
+    </li>
+  </ul>
+</nav>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<nav class="CIC-side-nav js-side-nav" aria-labelledby="sksm726ns">
+  <button class="CIC-side-nav__toggle" aria-expanded="false">
+    <span>Agile Methodology</span>
+  </button>
+  <div class="CIC-side-nav__header" id="sksm726ns">
+    <a href="#">Agile Methodology</a>
+  </div>
+  <ul class="CIC-side-nav__content">
+    <li>
+      <a href="#">Pre-discovery</a>
+    </li>
+    <li>
+      <a href="#">Discovery</a>
+    </li>
+    <li class="active">
+      <a href="#" class="current" aria-current="page">Alpha</a>
+    </li>
+    <li>
+      <a href="#">Beta</a>
+    </li>
+    <li>
+      <a href="#">Live</a>
+    </li>
+  </ul>
+</nav>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+
+<h3>Two levels</h3>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+    <nav class="CIC-side-nav js-side-nav" aria-labelledby="sksm7sss26ns">
+      <button class="CIC-side-nav__toggle" aria-expanded="false">
+        <span>About DPC</span>
+      </button>
+      <div class="CIC-side-nav__header" id="sksm7sss26ns">
+        <a href="#">About DPC</a>
+      </div>
+      <ul class="CIC-side-nav__content">
+        <li>
+          <a href="#">About the Department</a>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="#">Accessing DPC information</a>
+        </li>
+        <li>
+          <a href="#">Premier and Cabinet cluster</a>
+        </li>
+        <li class="active">
+          <a href="#">CIC Digital Design System</a>
+          <ul>
+            <li>
+              <a href="">Building a service</a>
+            </li>
+            <li>
+              <a href="" class="current" aria-current="page">Content design</a>
+            </li>
+            <li>
+              <a href="">Using artefacts</a>
+            </li>
+            <li>
+              <a href="">Experimenting</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<nav class="CIC-side-nav js-side-nav" aria-labelledby="sksm7sss26ns">
+  <button class="CIC-side-nav__toggle" aria-expanded="false">
+    <span>About DPC</span>
+  </button>
+  <div class="CIC-side-nav__header" id="sksm7sss26ns">
+    <a href="#">About DPC</a>
+  </div>
+  <ul class="CIC-side-nav__content">
+    <li>
+      <a href="#">About the Department</a>
+    </li>
+    <li>
+      <a href="#">Careers</a>
+    </li>
+    <li>
+      <a href="#">Accessing DPC information</a>
+    </li>
+    <li>
+      <a href="#">Premier and Cabinet cluster</a>
+    </li>
+    <li class="active">
+      <a href="#">CIC Digital Design System</a>
+      <ul>
+        <li>
+          <a href="">Building a service</a>
+        </li>
+        <li>
+          <a href="" class="current" aria-current="page">Content design</a>
+        </li>
+        <li>
+          <a href="">Using artefacts</a>
+        </li>
+        <li>
+          <a href="">Experimenting</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<nav class="CIC-side-nav js-side-nav" aria-labelledby="sksm7sss26ns">
+  <button class="CIC-side-nav__toggle" aria-expanded="false">
+    <span>About DPC</span>
+  </button>
+  <div class="CIC-side-nav__header" id="sksm7sss26ns">
+    <a href="#">About DPC</a>
+  </div>
+  <ul class="CIC-side-nav__content">
+    <li>
+      <a href="#">About the Department</a>
+    </li>
+    <li>
+      <a href="#">Careers</a>
+    </li>
+    <li>
+      <a href="#">Accessing DPC information</a>
+    </li>
+    <li>
+      <a href="#">Premier and Cabinet cluster</a>
+    </li>
+    <li class="active">
+      <a href="#">CIC Digital Design System</a>
+      <ul>
+        <li>
+          <a href="">Building a service</a>
+        </li>
+        <li>
+          <a href="" class="current" aria-current="page">Content design</a>
+        </li>
+        <li>
+          <a href="">Using artefacts</a>
+        </li>
+        <li>
+          <a href="">Experimenting</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+
+<h3>Four levels</h3>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+    <nav class="CIC-side-nav js-side-nav" aria-labelledby="sksm7sss27ns">
+      <button class="CIC-side-nav__toggle" aria-expanded="false">
+        <span>Service Design</span>
+      </button>
+      <div class="CIC-side-nav__header" id="sksm7sss27ns">
+        <a href="#">Service Design</a>
+      </div>
+      <ul class="CIC-side-nav__content">
+        <li>
+          <a href="#">What is Service Design</a>
+        </li>
+        <li>
+          <a href="#">Service Design methodologies</a>
+        </li>
+        <li class="active">
+          <a href="#">Agile Ways of working</a>
+          <ul>
+            <li>
+              <a href="">Pre-discovery</a>
+            </li>
+            <li>
+              <a href="">Discovery</a>
+            </li>
+            <li class="active">
+              <a href="">Alpha</a>
+              <ul>
+                <li>
+                  <a href="">What is Alpha?</a>
+                </li>
+                <li>
+                  <a href="">Turning Research into design</a>
+                </li>
+                <li class="active">
+                  <a href="" class="current" aria-current="page">Prototyping</a>
+                  <ul>
+                    <li>
+                      <a href="">Low fidelity</a>
+                    </li>
+                    <li>
+                      <a href="">High Fidelity</a>
+                    </li>
+                    <li>
+                      <a href="">Prototyping tools</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Beta</a>
+            </li>
+            <li>
+              <a href="">Live</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Team roles</a>
+        </li>
+        <li>
+          <a href="#">Resources</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<nav class="CIC-side-nav js-side-nav" aria-labelledby="sksm7sss27ns">
+  <button class="CIC-side-nav__toggle" aria-expanded="false">
+    <span>Service Design</span>
+  </button>
+  <div class="CIC-side-nav__header" id="sksm7sss27ns">
+    <a href="#">Service Design</a>
+  </div>
+  <ul class="CIC-side-nav__content">
+    <li>
+      <a href="#">What is Service Design</a>
+    </li>
+    <li>
+      <a href="#">Service Design methodologies</a>
+    </li>
+    <li class="active">
+      <a href="#">Agile Ways of working</a>
+      <ul>
+        <li>
+          <a href="">Pre-discovery</a>
+        </li>
+        <li>
+          <a href="">Discovery</a>
+        </li>
+        <li class="active">
+          <a href="">Alpha</a>
+          <ul>
+            <li>
+              <a href="">What is Alpha?</a>
+            </li>
+            <li>
+              <a href="">Turning Research into design</a>
+            </li>
+            <li class="active">
+              <a href="" class="current" aria-current="page">Prototyping</a>
+              <ul>
+                <li>
+                  <a href="">Low fidelity</a>
+                </li>
+                <li>
+                  <a href="">High Fidelity</a>
+                </li>
+                <li>
+                  <a href="">Prototyping tools</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Beta</a>
+        </li>
+        <li>
+          <a href="">Live</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Team roles</a>
+    </li>
+    <li>
+      <a href="#">Resources</a>
+    </li>
+  </ul>
+</nav>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<nav class="CIC-side-nav js-side-nav" aria-labelledby="sksm7sss27ns">
+  <button class="CIC-side-nav__toggle" aria-expanded="false">
+    <span>Service Design</span>
+  </button>
+  <div class="CIC-side-nav__header" id="sksm7sss27ns">
+    <a href="#">Service Design</a>
+  </div>
+  <ul class="CIC-side-nav__content">
+    <li>
+      <a href="#">What is Service Design</a>
+    </li>
+    <li>
+      <a href="#">Service Design methodologies</a>
+    </li>
+    <li class="active">
+      <a href="#">Agile Ways of working</a>
+      <ul>
+        <li>
+          <a href="">Pre-discovery</a>
+        </li>
+        <li>
+          <a href="">Discovery</a>
+        </li>
+        <li class="active">
+          <a href="">Alpha</a>
+          <ul>
+            <li>
+              <a href="">What is Alpha?</a>
+            </li>
+            <li>
+              <a href="">Turning Research into design</a>
+            </li>
+            <li class="active">
+              <a href="" class="current" aria-current="page">Prototyping</a>
+              <ul>
+                <li>
+                  <a href="">Low fidelity</a>
+                </li>
+                <li>
+                  <a href="">High Fidelity</a>
+                </li>
+                <li>
+                  <a href="">Prototyping tools</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Beta</a>
+        </li>
+        <li>
+          <a href="">Live</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Team roles</a>
+    </li>
+    <li>
+      <a href="#">Resources</a>
+    </li>
+  </ul>
+</nav>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
+    </section>
+  </div>
+</div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Grid | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="CIC Design System grids and breakpoints for CIC Insurance digital products and services." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--wide">
+      <div class="CIC-docs__intro">
+        <div class="CIC-docs__container">
+          <h1>Grid</h1>
+          
+          
+          
+          <div class="CIC-docs__external">
+            <a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/core/grid/blank.html" class="CIC-docs__external">
+              <span>View in new window</span>
+              <i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="CIC-docs__content">
+        <div class="CIC-docs__container">
+
+<nav class="CIC-in-page-nav" aria-labelledby="in-page-nav">
+  <div class="CIC-in-page-nav__title">On this page</div>
+  <ul class="CIC-in-page-nav__list">
+    <li>
+      <a href="#breakpoints">Breakpoints</a>
+    </li>
+    <li>
+      <a href="#content-grids">Content grids</a>
+    </li>
+  </ul>
+</nav>
+
+<h2 id="breakpoints">Breakpoints</h2>
+<p>The CIC Design System is built on a 12 column responsive grid which adapts to the user’s viewport across 5 breakpoints.</p>
+<div class="CIC-section CIC-section--white CIC-block CIC-p-x-sm CIC-p-top-sm">
+  <div class="CIC-table CIC-table--valign-middle">
+    <table>
+      <thead>
+        <tr>
+          <th>Breakpoint</th>
+          <th>Token</th>
+          <th style="max-width: 120px;">Container offset (fixed)</th>
+          <th style="max-width: 100px;">Gutters (fixed)</th>
+          <th style="max-width: 120px;">Max active content area</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>xs (Extra Small)<br/>0-575px</td>
+          <td><code>breakpoints-xs</code></td>
+          <td>16px</td>
+          <td>16px</td>
+          <td>544px</td>
+        </tr>
+        <tr>
+          <td>sm (Small)<br/>576-767px</td>
+          <td><code>breakpoints-sm</code></td>
+          <td>16px</td>
+          <td>16px</td>
+          <td>735px</td>
+        </tr>
+        <tr>
+          <td>md (Medium)<br/>768-991px</td>
+          <td><code>breakpoints-md</code></td>
+          <td>16px</td>
+          <td>32px</td>
+          <td>959px</td>
+        </tr>
+        <tr>
+          <td>lg (Large)<br/>992-1199px</td>
+          <td><code>breakpoints-lg</code></td>
+          <td>16px</td>
+          <td>32px</td>
+          <td>1167px</td>
+        </tr>
+        <tr>
+          <td>xl (Extra Large)<br/>1200px+</td>
+          <td><code>breakpoints-xl</code></td>
+          <td>16px</td>
+          <td>32px</td>
+          <td>1168px</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<br>
+
+<h2 id="content-grids">Content grids</h2>
+<p>Grid gives you the flexibility with Flexbox to build responsive layouts across different breakpoints. For example, to increase cards from a 2 column layout on the md breakpoint to a 3 column layout on the lg breakpoint. The CIC Design System recommends the below number of columns per breakpoint to ensure the content is at an optimal layout for readability and accessibility: </p>
+<ul>
+  <li>xs (Extra small) - 1 column</li>
+  <li>sm (Small) - up to 2 columns</li>
+  <li>md (Medium) - up to 3 columns</li>
+  <li>lg (Large) - up to 4 columns</li>
+  <li>xl (Extra large) - up to 4 columns</li>
+</ul>
+<p>You can find base grid components in the Figma UI Kit to enable quick building and prototyping. </p>
+<p> A set of rows make up a grid, and a set of columns make up a row. Columns are set using classes in this format:
+  <code>CIC-col-{breakpoint}-{columns}</code></p>
+<p>Where <strong>breakpoint</strong> is one of <strong>xs, sm, md, lg, xl</strong>.</p>
+<p>Where <strong>columns</strong> is between <strong>1</strong> and <strong>12</strong>.</p>
+
+<h3>Grid layouts</h3>
+<div class="CIC-p-x-md CIC-m-top-sm">
+  <figure class="CIC-media">
+    <img src="/assets/images/docs-grid-v3.0.png" alt="Container, columns and gutter diagram">
+  </figure>
+</div>
+
+<h4>Whole</h4>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+      <div class="CIC-grid">
+        <div class="CIC-col">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+      </div>  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Half</h4>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+      <div class="CIC-grid">
+        <div class="CIC-col CIC-col-sm-6">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+        <div class="CIC-col CIC-col-sm-6">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+      </div>  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col CIC-col-sm-6">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-sm-6">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col CIC-col-sm-6">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-sm-6">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Third</h4>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+      <div class="CIC-grid">
+        <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+        <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+        <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+      </div>  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h4>Quarter</h4>
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+      <div class="CIC-grid">
+        <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+        <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+        <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+        <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+      </div>  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col CIC-col-md-6 CIC-col-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+<h2 class="CIC-h3">Offset grids</h2>
+<p>Use <code>CIC-offset-lg-*</code> to shift the column to the right to the number of columns specified. For example, a <code>CIC-offset-lg-3</code> class will have a 3-column gap between the previous column.</p>
+<div class="CIC-docs__example CIC-m-top-sm">
+  <div class="CIC-docs__component">
+      <div class="CIC-grid">
+        <div class="CIC-col CIC-col CIC-col-lg-6">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+        <div class="CIC-col  CIC-col CIC-col-lg-3 CIC-offset-lg-3">
+          <!-- START: Column content -->
+          <div class="CIC-docs__box"></div>
+          <!-- END: Column content -->
+        </div>
+      </div>  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col CIC-col CIC-col-lg-6">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col  CIC-col CIC-col-lg-3 CIC-offset-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`  <div class="CIC-grid">
+    <div class="CIC-col CIC-col CIC-col-lg-6">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+    <div class="CIC-col  CIC-col CIC-col-lg-3 CIC-offset-lg-3">
+      <!-- START: Column content -->
+      <div class="CIC-docs__box"></div>
+      <!-- END: Column content -->
+    </div>
+  </div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Date picker | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body>
+
+
+<section class="CIC-section">
+  <div class="CIC-container CIC-p-y-sm">
+    <div class="CIC-layout">
+      <main class="CIC-layout__main">
+        
+        <div class="CIC-date-input js-date-input">
+          <legend>
+            <label for="date-input-1" class="CIC-form__label">Select date</label>
+            <span id="date-input-1-helper-text" class="CIC-form__helper">Use dd/mm/yyyy format. For example 28/10/2024</span>
+          </legend>
+          
+          <div class="CIC-date-input__wrapper CIC-form__input-group CIC-form__input-group--icon">
+            <input type="text" class="CIC-form__input js-date-input__text" autocomplete="off" id="date-input-1">
+            
+            <button class="CIC-button CIC-button--dark CIC-button--flex js-date-input__trigger" type="button">
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">calendar_today</span>
+            </button>
+          </div>
+        </div>
+        <br>
+        <br>
+        
+        <div class="CIC-date-input js-date-input" data-min-date="02/01/2024" data-max-date="28/01/2024" data-dates-disabled="18/01/2024 19/01/2024 20/01/2024">
+          <legend>
+            <label for="date-input-2" class="CIC-form__label">Select date</label>
+            <span id="date-input-2-helper-text" class="CIC-form__helper">Use dd/mm/yyyy format. For example 28/10/2024</span>
+          </legend>
+          
+          <div class="CIC-date-input__wrapper CIC-form__input-group CIC-form__input-group--icon">
+            <input type="text" class="CIC-form__input js-date-input__text" autocomplete="off" id="date-input-2" value="12/01/2024">
+            
+            <button class="CIC-button CIC-button--dark CIC-button--flex js-date-input__trigger" type="button">
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">calendar_today</span>
+            </button>
+          </div>
+        </div>
+        <br>
+        <br>
+        
+        
+        <fieldset class="CIC-form__date CIC-date-input js-date-input">
+          <legend>
+            <span class="CIC-form__label">Start date</span>
+            <span id="form-date-3-helper-text" class="CIC-form__helper">For example 28 10 2024</span>
+          </legend>
+          <div class="CIC-form__date-wrapper CIC-date-input__wrapper js-date-input-multiple">
+            <div class="CIC-form__date-input">
+              <label for="form-date-3-day" class="CIC-form__label CIC-form__label--small">Day</label>
+              <input type="text" maxlength="2" id="form-date-3-day" name="form-date-3-day" autocomplete="bday-day" class="CIC-form__input js-date-picker-date">
+            </div>
+            <div class="CIC-form__date-input">
+              <label for="form-date-3-month" class="CIC-form__label CIC-form__label--small">Month</label>
+              <input type="text" maxlength="2" id="form-date-3-month" name="form-date-3-month" autocomplete="bday-month" class="CIC-form__input js-date-picker-month">
+            </div>
+            <div class="CIC-form__date-input CIC-form__date-input--large">
+              <label for="form-date-3-year" class="CIC-form__label CIC-form__label--small">Year</label>
+              <input type="text" maxlength="4" id="form-date-3-year" name="form-date-3-year" autocomplete="bday-year" class="CIC-form__input js-date-picker-year">
+            </div>
+            <div class="CIC-date-input__button">
+              <button class="CIC-button CIC-button--dark CIC-button--flex js-date-input__trigger" type="button">
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">calendar_today</span>
+              </button>
+            </div>
+          </div>
+        </fieldset>
+        
+      </main>
+      <div class="CIC-layout__sidebar CIC-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+<section class="CIC-section CIC-section--brand-dark CIC-section--invert">
+  <div class="CIC-container CIC-p-y-sm">
+    <div class="CIC-layout">
+      <main class="CIC-layout__main">
+        
+        <div class="CIC-date-input js-date-input">
+          <legend>
+            <label for="date-input-4" class="CIC-form__label">Select date</label>
+            <span id="date-input-4-helper-text" class="CIC-form__helper">Use dd/mm/yyyy format. For example 28/10/2024</span>
+          </legend>
+          
+          <div class="CIC-date-input__wrapper CIC-form__input-group CIC-form__input-group--icon">
+            <input type="text" class="CIC-form__input js-date-input__text" autocomplete="off" id="date-input-4">
+            
+            <button class="CIC-button CIC-button--dark CIC-button--flex js-date-input__trigger" type="button">
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">calendar_today</span>
+            </button>
+          </div>
+        </div>
+        <br>
+        <br>
+        
+        <div class="CIC-date-input js-date-input" data-min-date="02/01/2024" data-max-date="28/01/2024" data-dates-disabled="18/01/2024 19/01/2024 20/01/2024">
+          <legend>
+            <label for="date-input-5" class="CIC-form__label">Select date</label>
+            <span id="date-input-5-helper-text" class="CIC-form__helper">Use dd/mm/yyyy format. For example 28/10/2024</span>
+          </legend>
+          
+          <div class="CIC-date-input__wrapper CIC-form__input-group CIC-form__input-group--icon">
+            <input type="text" class="CIC-form__input js-date-input__text" autocomplete="off" id="date-input-5" value="12/01/2024">
+            
+            <button class="CIC-button CIC-button--dark CIC-button--flex js-date-input__trigger" type="button">
+              <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">calendar_today</span>
+            </button>
+          </div>
+        </div>
+        <br>
+        <br>
+        
+        
+        <fieldset class="CIC-form__date CIC-date-input js-date-input">
+          <legend>
+            <span class="CIC-form__label">Start date</span>
+            <span id="form-date-6-helper-text" class="CIC-form__helper">For example 28 10 2024</span>
+          </legend>
+          <div class="CIC-form__date-wrapper CIC-date-input__wrapper js-date-input-multiple">
+            <div class="CIC-form__date-input">
+              <label for="form-date-6-day" class="CIC-form__label CIC-form__label--small">Day</label>
+              <input type="text" maxlength="2" id="form-date-6-day" name="form-date-6-day" autocomplete="bday-day" class="CIC-form__input js-date-picker-date">
+            </div>
+            <div class="CIC-form__date-input">
+              <label for="form-date-6-month" class="CIC-form__label CIC-form__label--small">Month</label>
+              <input type="text" maxlength="2" id="form-date-6-month" name="form-date-6-month" autocomplete="bday-month" class="CIC-form__input js-date-picker-month">
+            </div>
+            <div class="CIC-form__date-input CIC-form__date-input--large">
+              <label for="form-date-6-year" class="CIC-form__label CIC-form__label--small">Year</label>
+              <input type="text" maxlength="4" id="form-date-6-year" name="form-date-6-year" autocomplete="bday-year" class="CIC-form__input js-date-picker-year">
+            </div>
+            <div class="CIC-date-input__button">
+              <button class="CIC-button CIC-button--dark CIC-button--flex js-date-input__trigger" type="button">
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">calendar_today</span>
+              </button>
+            </div>
+          </div>
+        </fieldset>
+        
+      </main>
+      <div class="CIC-layout__sidebar CIC-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+</body>
+</html>

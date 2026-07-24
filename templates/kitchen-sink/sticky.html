@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Domestic, family and sexual violence | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body>
+
+<span id="quick-exit-message" class="sr-only">Quick exit is available on this page. You can leave at any time by pressing the Escape key two times.</span>
+<div id="tpl-header"></div>
+<nav class="CIC-main-nav" id="main-nav" aria-label="Main menu">
+  <div class="CIC-main-nav__header">
+    <div class="CIC-main-nav__title">Menu</div>
+    <button class="CIC-icon-button js-close-nav" type="button" aria-expanded="true">
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">close</span>
+      <span class="sr-only">Close Menu</span>
+    </button>
+  </div>
+  <ul class="CIC-main-nav__list">
+    <li>
+      <a href="http://google.com">
+        <span>About DPC</span>
+      </a>    </li>
+    <li>
+      <a href="/index.html#updates">
+        <span>Updates</span>
+      </a>    </li>
+    <li class="active">
+      <a href="/index.html#publications">
+        <span>Publications</span>
+      </a>    </li>
+    <li>
+      <a href="/index.html#tools-resources">
+        <span>Tools &amp; Resources</span>
+      </a>    </li>
+    <li>
+      <a href="/index.html#contact-us">
+        <span>Contact us</span>
+      </a>    </li>
+  </ul>
+</nav>
+<div class="CIC-container CIC-p-bottom-xs">
+  <nav aria-label="Breadcrumbs" class="CIC-breadcrumbs js-breadcrumbs">
+    <ol>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About DPC</a>
+        </li>
+        <li>
+          <a href="#" class="current" aria-current="page">CIC Digital Design System</a>
+        </li>
+    </ol>
+  </nav>
+</div>
+
+<div class="CIC-container CIC-p-top-sm CIC-p-bottom-lg">
+  <div class="CIC-layout">
+    <main id="content" class="CIC-layout__main">
+      <button type="button" class="CIC-button CIC-button--dark CIC-button--flex CIC-back-to-top js-back-to-top">
+      </button>      <div class="CIC-block">
+        <h1>Domestic, family and sexual violence</h1>
+        <p class="CIC-intro">How to get help and support, emergency housing, understanding domestic and sexual violence, sexual consent and the law, legal help, and how to stay safe.</p>
+
+        <h2>Hotlines</h2>
+        <ul>
+          <li><strong>CIC Domestic Violence Line</strong> <a href="tel:1800656463">1800 656 463</a></li>
+          <li><strong>1800 RESPECT</strong> <a href="tel:1800737732">1800 737 732</a></li>
+          <li><strong>Link2home Homelessness</strong> <a href="tel:1800152152">1800 152 152</a></li>
+          <li><strong>Link2Home Veterans</strong> <a href="tel:1800326989">1800 326 989</a></li>
+          <li><strong>Child Protection Helpline</strong> <a href="tel:132111">13 21 11</a></li>
+        </ul>
+
+        <h2 id="initialise-other-elements">Initialise other elements</h2>
+        <div class="CIC-grid CIC-grid--spaced CIC-m-top-sm">
+
+          <div class="CIC-col CIC-col-md-6">
+            <h3>Global alert</h3>
+            <button class="CIC-button CIC-button--dark CIC-m-top-md" id="init-global-alert" type="button">Initialise Global alert</button>
+            <script>
+              (function () {
+                var btn = document.getElementById('init-global-alert')
+                if (!btn) return
+
+                btn.addEventListener('click', function () {
+                  // Avoid duplicate injection
+                  if (document.querySelector('[data-module="global-alert"]')) return
+
+                  // Insert at the very top of the page (before the first child of <body>)
+                  var first = document.body.firstElementChild
+
+                  // Build Global Alert element
+                  var alertEl = document.createElement('div')
+                  alertEl.className = 'CIC-global-alert CIC-global-alert--critical'
+                  alertEl.setAttribute('data-module', 'global-alert')
+                  // alertEl.setAttribute('data-cookie-name', 'CIC-global-alert') - enable if cookie persistence is needed
+                  alertEl.setAttribute('role', 'alert')
+                  alertEl.style.position = 'relative'
+                  alertEl.style.zIndex = '2000'
+                  alertEl.innerHTML = '\
+                    <div class="CIC-global-alert__wrapper">\
+                      <div class="CIC-global-alert__content">\
+                        <div class="CIC-global-alert__title">Important update</div>\
+                        <p>Service outages may occur between 1am and 3am.</p>\
+                      </div>\
+                      <button class="CIC-icon-button js-close-alert" type="button">\
+                        <span class="material-icons CIC-material-icons" aria-hidden="true">close</span>\
+                        <span class="sr-only">Close message</span>\
+                      </button>\
+                    </div>'
+
+                  // Insert as the first element in <body> so it sits above everything
+                  if (first) {
+                    document.body.insertBefore(alertEl, first)
+                  } else {
+                    document.body.appendChild(alertEl)
+                  }
+
+                  if (window.CIC && window.CIC.GlobalAlert) {
+                    var instance = new window.CIC.GlobalAlert(alertEl)
+                    instance.init()
+                    var closeBtn = alertEl.querySelector('button.js-close-alert')
+                    if (closeBtn) {
+                      closeBtn.addEventListener('click', function () {
+                        // no-op: component hides itself; no layout padding to revert
+                      })
+                    }
+                  } else {
+                    console.warn('GlobalAlert module not found; injected markup only.')
+                  }
+                })
+              })()
+            </script>
+
+            <h3 class="CIC-m-top-lg">Back to top</h3>
+            <p>Currently active on this page, applied to the content body. Scroll down to the bottom then scroll upwards to see it in action.</p>
+          </div>
+
+          <div class="CIC-col CIC-col-md-6">
+            <h3>Cookie consent</h3>
+            <button class="CIC-button CIC-button--dark CIC-m-top-md" id="init-cookie-consent" type="button">Initialise Cookie consent banner</button>
+            <script>
+              document.getElementById('init-cookie-consent').addEventListener('click', function () {
+                var existing = document.querySelector('.js-sticky-container .CIC-cookie-banner, .CIC-cookie-banner')
+                if (existing) {
+                  existing.removeAttribute('hidden')
+                  existing.style.display = 'block'
+                  return
+                }
+                if (window.CIC && window.CIC.CookieConsent) {
+                  new window.CIC.CookieConsent(window.CIC.cookieConsentConfig || {
+                    consentBanner: {
+                      title: 'Cookie use on our website',
+                      description: 'We use cookies to improve your experience on our site.',
+                      acceptAllBtn: 'Accept all cookies',
+                      acceptNecessaryBtn: 'Reject non-essential cookies',
+                      showPreferencesBtn: 'Manage your cookies',
+                      confirmationMessage: 'Your cookie preferences have been saved.',
+                    },
+                    preferencesDialog: {}
+                  })
+                } else {
+                  console.error('CookieConsent module not found.')
+                }
+              })
+            </script>
+          </div>
+
+          <h2>Potential conflicts with <kbd>Esc</kbd> key function</h2>
+          <div class="CIC-col CIC-col-md-6 CIC-m-top-sm">
+            <h3>Dialog</h3>
+            <div class="CIC-block">
+              <button class="CIC-button CIC-button--dark js-open-dialog-dismissible-dark" aria-haspopup="dialog">Launch Dialog</button>
+            </div>
+            
+            <div class="CIC-dialog js-dialog js-dialog-dismiss" id="dismissible-dark" role="dialog" aria-labelledby="dismissible-dark-title">
+              <div class="CIC-dialog__wrapper">
+                <div class="CIC-dialog__container">
+                  <div class="CIC-dialog__top">
+                    <div class="CIC-dialog__title">
+                      <h2 id="dismissible-dark-title">Changes will be lost</h2>
+                    </div>
+                    <div class="CIC-dialog__close">
+                      <button class="CIC-icon-button js-close-dialog">
+                        <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">close</span>
+                        <span class="sr-only">Close</span>
+                      </button>
+                    </div>
+                    </div>
+                  <div class="CIC-dialog__content">
+                    <p>This form contains unsaved changes. By exiting, all unsaved changes will be permanently lost. If you wish to save your changes, return to form and follow the prompts to save your progress. If you do not wish to keep any unsaved changes you can proceed to exit the form. </p>
+                  </div>
+                </div>
+                <div class="CIC-dialog__bottom">
+                  <button class="CIC-button CIC-button--dark CIC-button--danger js-close-dialog">Exit form</button>
+                  <button class="CIC-button CIC-button--dark-outline-solid js-close-dialog">Return to form</button>
+                </div>
+              </div>
+            </div>
+            <h3 class="CIC-m-bottom-sm">Select</h3>
+            <label class="CIC-form__label" for="test-select">Region</label>
+              <select class="CIC-form__select" name="test-select" id="test-select" ><option value="">Please select</option>
+                <option value="Central Coast">Central Coast</option>
+                <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                <option value="Far West">Far West</option>
+                <option value="Hunter">Hunter</option>
+                <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                <option value="New England &amp; North West">New England &amp; North West</option>
+                <option value="North Coast">North Coast</option>
+                <option value="Riverina Murray">Riverina Murray</option>
+              </select>          </div>
+          <div class="CIC-col CIC-col-md-6 CIC-m-top-sm">
+            <h3>Toggletip</h3>
+            <p>In the quiet desperation of the third day, Santiago battles <span aria-controls="toggletip-example-dark" class="CIC-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin</span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their silences — in what remains unspoken between man, sea, and sky.</p>
+            <div id="toggletip-example-dark" class="CIC-toggletip__element CIC-toggletip__element--dark">
+              <p>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="CIC-section-break CIC-m-top-lg CIC-m-bottom-lg">
+
+        <h2>Quick access</h2>
+        <div class="CIC-grid CIC-m-bottom-md">
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">Domestic, family and sexual violence support contacts</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">Safer Pathway</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">Help someone in a domestic violence situation</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">CIC Victims Support Scheme</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>How we can help</h2>
+        <div class="CIC-grid">
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">About domestic and family violence</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">About sexual violence</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">How to stay safe</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">My situation is…</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">Police, legal help and the law</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+          <div class="CIC-col CIC-col-md-6 CIC-col-lg-4">
+            <div class="CIC-card">
+              <div class="CIC-card__content">
+                <div class="CIC-card__title">
+                  <a href="#">Support programs</a>
+                </div>
+                <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">east</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="CIC-callout">
+        <div class="CIC-callout__content">
+          <p class="CIC-h4">Keep up-to date</p>
+          <p>Join our <a href='#'>community</a> and register for updates to stay up-to-date with all the latest patterns releases.</p>
+        </div>
+      </div>
+
+    </main>
+    <div class="CIC-layout__sidebar">
+      <div class="CIC-section CIC-section--box">
+        <form class="CIC-form" action="#">
+          <h4 class="CIC-section-title">Want to stay in touch?</h4>
+          <p>Find out about work happening across CIC Insurance in the digital space. </p>
+          <div class="CIC-form__group">
+            <label class="CIC-form__label CIC-form__required" for="subscribe-full-name">Full name<span class="sr-only"> (required)</span></label>
+            <input class="CIC-form__input" type="text" id="subscribe-full-name" name="subscribe-full-name"     >
+          </div>
+          <div class="CIC-form__group">
+            <label class="CIC-form__label CIC-form__required" for="subscribe-email">Email<span class="sr-only"> (required)</span></label>
+            <input class="CIC-form__input" type="text" id="subscribe-email" name="subscribe-email"     >
+          </div>
+          <div class="CIC-form__group">
+            <input class="CIC-form__checkbox-input" type="checkbox" name="subscribe-terms" id="subscribe-tc"  >
+            <label class="CIC-form__checkbox-label" for="subscribe-tc">I have read the information regarding <a href='#'>privacy policy</a></label>
+          </div>
+          <div class="CIC-form__group">
+            <input type="submit" class="CIC-button CIC-button--dark" value="Submit">
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<footer id="tpl-footer"></footer>
+
+<div class="CIC-sticky-container">
+  <a
+    class="CIC-quick-exit"
+    href="https://www.google.com/webhp"
+    data-options='{
+      "enableEsc": true,
+      "enableCloak": true
+    }'
+    rel="nofollow noopener"
+    id="CIC-quick-exit"
+    aria-label="Quick exit"
+    aria-describedby="CIC-quick-exit__desc"
+  >
+    <div class="CIC-quick-exit__content">
+      <span
+        id="CIC-quick-exit__desc"
+        class="CIC-quick-exit__description-text"
+      >
+        Leave quickly using this banner or press <kbd aria-label="Escape key">Esc</kbd> 2 times.
+      </span>
+      <span class="CIC-quick-exit__exit-text">Exit now</span>
+    </div>
+  </a>
+</div>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/template-components.js"></script>
+</body>
+</html>

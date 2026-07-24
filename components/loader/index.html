@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Loader | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="Loaders indicate to the user that data is loading." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--narrow">
+      <div class="CIC-docs__intro CIC-docs__intro--tabs">
+        <div class="CIC-docs__container">
+          <h1>Loader</h1>
+          
+          <p class="CIC-intro">Loaders indicate to the user that data is loading.</p>
+          
+        </div>
+      </div>
+<div class="CIC-docs__tabs">
+  <div class="CIC-tabs js-tabs CIC-docs-tabs">
+    <ul class="CIC-tabs__list">
+      <li class="CIC-tabs__list-item">
+        <a href="#section-guidance" class="CIC-tabs__link js-tabs-fixed">Guidance</a>
+      </li>
+      <li class="CIC-tabs__list-item">
+        <a href="#section-interactive-demo" class="CIC-tabs__link js-tabs-fixed">Demo &amp; Code</a>
+      </li>
+    </ul>
+    <section id="section-guidance" class="CIC-tabs__content">
+      <div class="CIC-docs__container">
+        
+<h2>Usage</h2>
+<p>Loaders should be shown when content is loading or an action is being processed. They reassure the user that their request is being fulfilled. Once the process is complete the loader should fade and be replaced by the loaded content.</p>
+<p>Use loaders when the the wait time is unknown or anticipated to be longer than one seconds. When showing the loader as part of a state (writing or validating data), no delay should be used.</p>
+<p>Do</p>
+<ul>
+  <li>place the loader centered in the area the data is loading</li>
+  <li>only show a spinner if the expected wait time is more than one second</li>
+  <li>only show one loader on a page at a time. If mulitple sections are loading, consider using a large loader for the entire section instead of individual ones</li>
+</ul>
+<h2>When to avoid</h2>
+<p>Do not use loaders if the loading process is less than one second.</p>
+
+<h2>How this component works</h2>
+<h3>Explain why the user is waiting</h3>
+<p>To further reduce a user’s uncertainty, offer the reason they are waiting by customising the label. For example, “Your payment is being processed” or “Loading results”.</p>
+<h3>Sizes</h3>
+<p>Loaders are available in different sizes to cater for different use cases. For example:</p>
+<ul>
+  <li><strong>Small:</strong> 24px -  use for text labels or inside other UI elements, like a button.</li>
+  <li><strong>Medium:</strong> 32px - use for larger visual elements, like cards.</li>
+  <li><strong>Large:</strong> 48px, use for larer sections of a page, like charts or maps.</li>
+  <li><strong>Extra large:</strong> 64px, use for whole page loading.</li>
+</ul>
+
+<h2>Accessibility</h2>
+<p>All components are responsive and designed to comply with WCAG 2.2 AA accessibility standards. Full compliance depends on using and configuring the components correctly.</p>
+
+
+      </div>
+    </section>
+    <section id="section-interactive-demo" class="CIC-tabs__content">
+      <div class="CIC-docs__demo">
+        <div class="CIC-docs__external">
+          <div class="CIC-list CIC-list--8">
+            <a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/loader/blank.html"><span>View in new window</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a><a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/templates/content/article-loader.html"><span>View in template</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a><a class="CIC-small CIC-link CIC-link--icon" target="_blank" href="/components/loader/theme.html"><span>View theming example</span><i class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">launch</i></a>
+          </div>
+        </div>
+
+<div class="CIC-docs__example">
+  <div class="CIC-docs__component">
+    <div class="CIC-list CIC-list--16">
+      <div class="CIC-loader">
+        <span aria-hidden="true" class="CIC-loader__circle"></span>
+        <span role="status" class="CIC-loader__label">Loading</span>
+      </div>
+      <div class="CIC-loader">
+        <span aria-hidden="true" class="CIC-loader__circle CIC-loader__circle--lg"></span>
+        <span role="status" class="CIC-loader__label">Loading</span>
+      </div>
+      <div class="CIC-loader">
+        <span aria-hidden="true" class="CIC-loader__circle CIC-loader__circle--md"></span>
+        <span role="status" class="CIC-loader__label">Loading</span>
+      </div>
+      <div class="CIC-loader">
+        <span aria-hidden="true" class="CIC-loader__circle CIC-loader__circle--sm"></span>
+        <span role="status" class="CIC-loader__label">Loading</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="CIC-docs-code">
+  <button class="CIC-link CIC-link--button CIC-link--icon CIC-small js-code-button">
+    <span>Show code</span>
+    <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div class="CIC-docs-code__content">
+    <button type="button" class="CIC-button CIC-button--dark-outline-solid CIC-button--flex CIC-button--small js-code-copy">
+      <span>Copy</span>
+      <span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+    </button>
+    <div class="CIC-docs-code__copy" focusable="false" aria-hidden="true" tabindex="-1"><script>document.write((`<div class="CIC-list CIC-list--16">
+  <div class="CIC-loader">
+    <span aria-hidden="true" class="CIC-loader__circle"></span>
+    <span role="status" class="CIC-loader__label">Loading</span>
+  </div>
+  <div class="CIC-loader">
+    <span aria-hidden="true" class="CIC-loader__circle CIC-loader__circle--lg"></span>
+    <span role="status" class="CIC-loader__label">Loading</span>
+  </div>
+  <div class="CIC-loader">
+    <span aria-hidden="true" class="CIC-loader__circle CIC-loader__circle--md"></span>
+    <span role="status" class="CIC-loader__label">Loading</span>
+  </div>
+  <div class="CIC-loader">
+    <span aria-hidden="true" class="CIC-loader__circle CIC-loader__circle--sm"></span>
+    <span role="status" class="CIC-loader__label">Loading</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+    <div class="CIC-docs-code__wrapper">
+<pre><code class="html"><script>document.write((`<div class="CIC-list CIC-list--16">
+  <div class="CIC-loader">
+    <span aria-hidden="true" class="CIC-loader__circle"></span>
+    <span role="status" class="CIC-loader__label">Loading</span>
+  </div>
+  <div class="CIC-loader">
+    <span aria-hidden="true" class="CIC-loader__circle CIC-loader__circle--lg"></span>
+    <span role="status" class="CIC-loader__label">Loading</span>
+  </div>
+  <div class="CIC-loader">
+    <span aria-hidden="true" class="CIC-loader__circle CIC-loader__circle--md"></span>
+    <span role="status" class="CIC-loader__label">Loading</span>
+  </div>
+  <div class="CIC-loader">
+    <span aria-hidden="true" class="CIC-loader__circle CIC-loader__circle--sm"></span>
+    <span role="status" class="CIC-loader__label">Loading</span>
+  </div>
+</div>
+`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </section>
+  </div>
+</div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

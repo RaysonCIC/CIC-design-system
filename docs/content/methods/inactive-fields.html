@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Inactive fields | CIC Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.Brand.https://cicinsurancegroup.com//CIC-og-image.jpg">
+  <meta name="description" content="Avoid using inactive form fields. Render fields only when users can edit them, and present read-only information as plain text." />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CIC Design System" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for CIC Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="/cookie-consent-config.js"></script>
+</head>
+
+<body class="CIC-docs">
+  <div id="gheader"></div>
+  <div class="CIC-docs__wrapper">
+    
+    <div id="gnav"></div>
+    <div class="CIC-docs__main CIC-docs__main--narrow">
+      <div class="CIC-docs__intro">
+        <div class="CIC-docs__container">
+          <h1>Inactive fields</h1>
+          
+          <p class="CIC-intro">Avoid using inactive form fields. Render fields only when users can edit them, and present read-only information as plain text.</p>
+          
+        </div>
+      </div>
+      <div class="CIC-docs__content">
+        <div class="CIC-docs__container">
+
+<h2>Principles</h2>
+<ul>
+  <li><strong>Show, don’t suggest.</strong> Present fixed values as text, not as inputs styled to look inactive.</li>
+  <li><strong>Reduce friction.</strong> Keep the tab order clean and efficient by removing controls the user cannot act on.</li>
+  <li><strong>Signal clearly.</strong> Make state obvious through wording, placement, and visual design—not through disabled or inactive controls.</li>
+</ul>
+
+<h2>Preferred patterns</h2>
+
+<h3>Display information as text</h3>
+<p>The simplest and most inclusive way to present information that cannot be edited is to show it as plain text near the related form. This avoids users mistaking an inactive input for something interactive. It also reduces visual clutter, keeps the focus order clean, and shortens the journey for keyboard and screen reader users. Showing data as text makes the status unambiguous: the user can read it, but they are not expected to act on it here.</p>
+<p>Show read-only values as plain text (or in a summary list), and avoid long forms filled with non-editable inputs.</p>
+
+<h4>Examples:</h4>
+<div class="CIC-grid CIC-m-top-md">
+  <div class="CIC-col CIC-col-sm-6 CIC-docs__guideline">
+    <div class="CIC-docs__guideline--do"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">check_circle</span><span>Do</span></div>
+    <img src="/assets/images/inactive-fields-text-display-do.png" alt="Example of how to display text values outside of form fields">
+  </div>
+  <div class="CIC-col CIC-col-sm-6 CIC-docs__guideline">
+    <div class="CIC-docs__guideline--dont"><span class="material-icons CIC-material-icons" focusable="false" aria-hidden="true">cancel</span><span>Don't</span></div>
+    <img src="/assets/images/inactive-fields-text-display-dont.png" alt="Example of how to not display text values within form fields">
+  </div>
+</div>
+
+<h3>Conditionally render relevant fields rather than toggling disabled attributes</h3>
+<p>Rather than use inactive fields for fields that aren't able to be updated by the user, conditionally render the field only when it's needed, rather than showing an inactive input with a <code>disabled</code> attribute.</p>
+
+<p>Render fields only when they're relevant (rather than showing an inactive input with a <code>disabled</code> attribute) and offer a single, clear Edit action for the section; don’t use disabled fields to explain process states or permissions, or pad forms with non-editable inputs.</p>
+
+<h4>Example:</h4>
+<div class="CIC-grid CIC-m-top-sm">
+  <div class="CIC-col CIC-col-sm-6 CIC-docs__guideline">
+    <h5 class="CIC-docs__guideline--heading CIC-m-bottom-sm">Before selection</h5>
+    <img src="/assets/images/inactive-fields-conditional-render-unchecked.png" alt="Example of how to not display text values within form fields">
+  </div>
+  <div class="CIC-col CIC-col-sm-6 CIC-docs__guideline">
+    <h5 class="CIC-docs__guideline--heading CIC-m-bottom-sm">After selection</h5>
+    <img src="/assets/images/inactive-fields-conditional-render-checked.png" alt="Example of how to display text values outside of form fields">
+  </div>
+</div>
+
+<h2>Accessibility guidance</h2>
+<ul>
+  <li><strong>Focus order:</strong> Presenting fixed values as text keeps the tab sequence clean and efficient.</li>
+  <li><strong>Announcements:</strong> Text is announced consistently across screen readers, avoiding the variability of input fields.</li>
+</ul>
+
+<h2>Content design</h2>
+<ul>
+  <li><strong>Be explicit:</strong> State clearly why a value cannot be edited, for example “This information is set by your organisation”.</li>
+  <li><strong>Context placement:</strong> Display fixed values close to the related inputs, but outside the form controls.</li>
+  <li><strong>Explain how to change:</strong> Provide helper text if the value must be updated elsewhere, e.g. “Contact support to update your legal name”.</li>
+  <li><strong>Use consistent status wording:</strong> Keep short, scannable tags like “Verified”, “Pending”, or “Not provided”.</li>
+  <li><strong>One clear action:</strong> Offer a single, obvious “Edit” action for the section instead of multiple links.</li>
+  <li><strong>Render conditionally:</strong> Only render fields when relevant; never show inactive or non-editable inputs.</li>
+</ul>
+
+        </div>
+      </div>
+      <footer id="gfooter"></footer>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/global-components.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/docs/js/docs.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>
